@@ -1,0 +1,421 @@
+@media only screen and (max-width: 1900px) {
+
+}
+@media only screen and (max-width: 1425px) {
+
+/*REVIEW*/
+.stamped-review-avatar {
+    position: absolute;
+    bottom: 0;
+    right: 82% !important;
+    left: 0;
+    margin-right: auto;
+}
+}
+
+@media only screen and (max-width: 1350px) {
+
+.stamped-review-avatar {
+    position: absolute;
+    bottom: 0;
+    right: 81% !important;
+    left: 0;
+    margin-right: auto;
+}
+
+
+}
+
+@media only screen and (max-width: 1309px) {
+   .stamped-review-header .created, .stamped-review-header-byline .created {
+    position: absolute;
+    float: right !important;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 40em;
+} 
+
+.stamped-review-avatar {
+    position: absolute;
+    bottom: 0;
+    right: 81% !important;
+    left: 0;
+    margin-right: auto;
+}
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+/** Homepage **/
+.top-header.sticky {
+    /* position: relative; */
+    display: none;
+}
+header.header.header-bannerimg.sticky-fix {
+    top: 0;
+    z-index: 1020;
+}
+.navPages-container {
+    bottom: 0;
+    height: 100%;
+    left: -26em;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    top: 40px;
+}
+.links-header {
+    /* margin: auto; */
+}
+.header-div {
+    display: -ms-flexbox;
+    display: flex;
+    width: 96%;
+    -ms-flex-pack: justify;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    /* min-width: 100%; */
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 20px;
+    top: 0;
+}
+.header-logo__link {
+    background: none;
+    border-bottom: 0;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0;
+    width: auto;
+    position: relative;
+    margin-top: 20%;
+    /* left: -77%; */
+}
+.header-logo {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    margin-left: -100px;
+    margin-bottom: 0;
+}
+.heroCarousel-slide .heroCarousel-image-wrapper {
+    max-height: 42.85714rem;
+    margin-top: 10em;
+}
+
+.heroCarousel .slick-dots {
+    bottom: 1.5rem;
+    top: 55em;
+}
+    a.navPages-action {
+        color: #fff !important;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-size: 14px;
+        text-transform: unset;
+
+}
+
+.”blog” {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    -ms-grid-rows: 50%;
+    grid-template-rows: 50%;
+    row-gap: 0;
+    max-width: 90%;
+    margin: 0 auto;
+    /* margin-top: 1em; */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.blogPost {
+    width: 100%;
+    display: grid;
+    max-width: 100%;
+}
+.”blog” div {
+    border: 1px solid #cccccc;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.blogPosts-more {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
+    width: 18em;
+}
+
+.navUser {
+    padding: 0 0rem;
+    position: relative;
+    right: -10em;
+    top: auto;
+    transform: none;
+    z-index: 50;
+}
+
+.navPages ul {
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 15em;
+}
+
+.footer-info {
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+
+
+
+    font-size: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: start;
+    padding-top: 119px;
+    padding-bottom: 30px;
+}
+/** ABOUT US **/
+.aboutus-paragraph {
+    margin-left: 2em;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 0em;
+    /* margin-right: 1em; */
+}
+
+/*REVIEW */
+
+.stamped-review-header .created, .stamped-review-header-byline .created {
+    position: absolute;
+    float: right !important;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 35em;
+}
+.stamped-review-avatar {
+    position: absolute;
+    bottom: 0;
+    right: 78% !important;
+    left: 0;
+    margin-right: auto;
+}
+/*BLOG*/
+.image-banner {
+    background-image: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/blog-banner.jpg?t=1599722308&amp;_ga=2.46110564.1918111745.1599697146-2022119561.1571639426);
+    background-size: cover;
+    display: block;
+    margin-top: 8em;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 0;
+    height: 400px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+article.sectionarticle .blog-thumbnail.blog-img {
+    margin-top: -3em;
+}
+
+article div.header-logo-image-container {
+    height: 12em;
+    max-height: none;
+    width: 20em;
+    margin-left: -1em;
+}
+
+.header-logo-image-container {
+    /* min-height: 84px; */
+    width: 110px;
+}
+}
+
+@media only screen and (max-width: 1080px) {
+
+.navUser {
+    padding: 0 0rem;
+    position: relative;
+    right: -8em;
+    top: auto;
+    transform: none;
+    z-index: 50;
+}
+.navPages ul {
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 14em;
+}
+    .flex-container {
+        display: flex;
+        max-width: 85%;
+        margin: 0px auto;
+    }
+    .aboutus-paragraph {
+        margin-left: 2em;
+        width: 60%;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: left;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 0em;
+        margin-right: 1em;
+    }
+    .top-header1 {
+        display: none;
+    }
+
+    .abs-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+    }
+
+    /*REVIEW*/
+    .support-text div {
+    width: 45%;
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.stamped-review-header .created, .stamped-review-header-byline .created {
+    position: absolute;
+    float: right !important;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 28em;
+}
+
+.stamped-review-avatar {
+    position: absolute;
+    bottom: 0;
+    right: 76% !important;
+    left: 0;
+    margin-right: auto;
+}
+/*BLOG*/
+.image-banner {
+    background-image: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/blog-banner.jpg?t=1599722308&amp;_ga=2.46110564.1918111745.1599697146-2022119561.1571639426);
+    background-size: cover;
+    display: block;
+    margin-top: 8em;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 0;
+    height: 400px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+article.sectionarticle .blog-thumbnail.blog-img {
+    margin-top: -6em;
+}
+input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
+        width: 17em;
+}
+}
+
+
+@media only screen and (max-width: 1024px) {
+    article.sectionarticle .blog-thumbnail.blog-img {
+    margin-top: -8em;
+}
+.stamped-review-header .created, .stamped-review-header-byline .created {
+    position: absolute;
+    float: right !important;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 28em;
+}
+
+.stamped-review-avatar {
+    position: absolute;
+    bottom: 0;
+    right: 76% !important;
+    left: 0;
+    margin-right: auto;
+}
+/*SET UP MATTRESSES CARE */
+.instruction-steps {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50%;
+    row-gap: 0;
+    max-width: 90%;
+    margin: 0 auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.instruction-steps > div {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.faqs-abs-content p {
+    font-size: 18px;
+    width: 100%;
+    font-weight: normal;
+}
+.full-decompression {
+    margin-top: 10%;
+}
+
+/* PRODUCT CERTIFICATION */
+.certipur-us-content {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.certipur-us-content>div>img {
+    width: 100%;
+}
+
+.ordtracker-form {
+    width: 90%;
+    margin: 70px auto;
+    border: 2px solid #cecece;
+    padding: 30px 85px;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+.stamped-review-avatar {
+    position: absolute;
+    bottom: 0;
+    right: 74% !important;
+    left: 0;
+    margin-right: auto;
+}
+}

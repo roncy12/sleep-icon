@@ -1,0 +1,29 @@
+{
+  "customLayouts": {
+    "product": {
+      "alternate-product.html":"/test-url/"
+    },
+    "brand": {
+      "custom-brand.html": "/brands/custombrand/"
+    },
+    "page": {
+      "custom-track-order.html": "/track-order/",
+      "custom-support.html" : "/support/",
+      "custom-about-us.html" : "/about-us/",
+      "custom-mattress-care-setup.html" : "/mattress-care-setup/",
+      "custom-is-reviews.html" : "/reviews/",
+      "custom-faqs.html" : "/faqs/",
+      "custom-product-certification.html": "/product-certification/",
+      "custom-faqs.html" : "/faqs/",
+      "custom-warranty-policy.html" : "/warranty-claim/",
+      "custom-categ.html": "/custom-categ/"
+    },
+    "category": {
+      "custom-category.html": "/custom-category/"
+    }
+  },
+  "normalStoreUrl": "https://icon-sleep.com",
+  "port": "3006",
+  "username": "stencil",
+  "token": "1d7idid9jrptmq9dpcth3wbx98wt72"
+}

@@ -1,0 +1,9 @@
+<div class="heroCarousel-content{{#unless show_background}} heroCarousel-content--empty{{/unless}}">
+    <span class="heroCarousel-title animation-element invi slide-left-long delay-1000 in-view">{{{heading}}}</span>
+
+    <p class="heroCarousel-description heroCarousel-description animation-element invi slide-left-long delay-1300 in-view">{{{text}}}</p>
+    {{#if button_text}}
+        <a href="{{url}}" aria-label="{{#if this.alt_text.length '!=' 0}}{{this.alt_text}}{{else}}{{lang 'carousel.slide_number' slide_number=(add @index 1)}}{{/if}}, {{button_text}}" class="heroCarousel-action button button--primary button--large animation-element invi bounce-in duration-1500 heroCarousel-action in-view">{{button_text}}</a>
+    {{/if}}
+</div>
+  
