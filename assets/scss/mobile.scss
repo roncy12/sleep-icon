@@ -642,6 +642,32 @@ img.header-logo-image.footer-logo {
     transform: translateY(-50%);
     margin: 0;
 }
+
+.warranty-banner img {
+    width: 100%;
+    height: 12em;
+    background-size: cover;
+    text-align: center;
+    background-position: center bottom;
+    position: relative;
+}
+.faqs-abs-content .p {
+    font-size: 16px;
+    padding-top: 0;
+    color: #fff;
+    text-transform: none;
+    margin: 0;
+}
+.faqs-abs-content {
+    text-align: center;
+    width: 90% !important;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    margin: 0;
+}
 }
 @media only screen and (max-width:500px){
 .navUser-item--cart .navUser-action {
@@ -1285,8 +1311,14 @@ span#stamped-badge-total {
     position: absolute;
     top: 90%;
 }
-
-
+.banner-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100% !important;
+}
 
 .banner-description h1 {
     color: #fff;
@@ -1294,8 +1326,13 @@ span#stamped-badge-total {
     font-weight: 700;
     margin: 15px 0;
 }
-
-
+.banner-description, h5 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 0;
+    width: 100% !important;
+    text-transform: inherit;
+}
 .support-text div {
     width: 60%;
     margin: 10px 5px;
@@ -1345,17 +1382,7 @@ i.fas.fa-envelope-open-text.icon {
     left: 58%;
     transform: translate(-50%, -50%);
 }
-/*
-.blog-thumbnail.blog-img {
-    margin: 0 auto 2rem;
-    position: relative;
-    max-width: 61em;
-    padding-top: 18em;
-}*/
-/*
-.blog-block .blog-thumbnail.blog-img {
-    padding-top: 18em;
-}*/
+
 article.blog.blog-flex .blog-thumbnail.blog-img {
     padding-top: 18em;
 }
@@ -1421,6 +1448,15 @@ input.button.button--primary.form-prefixPostfix-button--postfix.srch-button {
         /* -ms-flex: 0 0 100%; */
     /* flex: 0 0 100%; */
     max-width: 100%;
+}
+
+.warranty-banner img {
+    width: 100%;
+    height: 8em;
+    background-size: cover;
+    text-align: center;
+    background-position: center bottom;
+    position: relative;
 }
 }
 @media only screen and (max-width: 360px){
@@ -1530,4 +1566,93 @@ input.button.button--primary.form-prefixPostfix-button--postfix.srch-button {
     /* flex: 0 0 100%; */
     max-width: 100%;
 }
+}
+
+@media only screen and (max-width: 280px){
+    .faqs-abs-content {
+        text-align: center;
+        width: 100% !important;
+        position: absolute !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+    }
+    .faqs-abs-content, h1 {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 3px;
+        text-transform: uppercase;
+    }
+
+    .faqs-abs-content p {
+        font-size: 12px;
+        width: 100%;
+        font-weight: normal;
+
+    }
+    // Product Certification
+
+    .certipur-inside {
+        text-align: center;
+        width: 80% !important;
+        position: absolute !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 39em;
+    }
+
+    .certification-bottom h2 {
+        color: #00d2ff;
+        font-size: 32px;
+        font-weight: 700;
+        margin: 32px 0;
+        line-height: 1.5;
+    }
+    .cert-con {
+        padding: 2em 1em;
+    }
+    .certification-bottom {
+        background: url(../img/certification-bottom-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 39em;
+        text-align: center;
+        height: 35em;
+    }
+
+    .care-banner img {
+        position: relative;
+        width: 100%;
+        height: 7em;
+    }
+    .faqs-abs-content p {
+        font-size: 12px;
+        width: 100%;
+        font-weight: normal;
+    }
+    .after-text {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .warranty-banner img {
+        width: 100%;
+        height: 8em;
+        background-size: cover;
+        text-align: center;
+        background-position: center bottom;
+        position: relative;
+    }
+    .form-prefixPostfix.wrap.hide {
+        display: block;
+        left: -0.625rem;
+        width: 70%;
+        /* margin: 0 auto; */
+        margin-left: 23%;
+    }
 }

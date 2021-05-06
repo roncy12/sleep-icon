@@ -2380,9 +2380,6 @@ input[type=checkbox], input[type=radio] {
     box-sizing: border-box;
     padding: 0;
 }
-input:checked+.terms-showMore {
- /*   background-image: url('../img/crossed.png'); */
-}
 
 input+.terms-showMore {
     font-size: 16px;
@@ -2756,6 +2753,4 @@ a.mattress-section-button {
     position: relative;
 }
 
-/*********************************/
-/*  Header */
 
