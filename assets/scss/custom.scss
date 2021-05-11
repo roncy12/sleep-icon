@@ -305,6 +305,8 @@ body{
 
 .body {
     margin-top: -9.5rem;
+    margin-bottom: 1rem;
+   
 }
 .login-row {
     margin-top: 6rem;
@@ -2779,4 +2781,97 @@ a.mattress-section-button {
     position: relative;
 }
 
+// CUSTOM PRIVACY POLICY
+.pp-top-banner>img {
+    width: 100%;
+    position: relative;
+}
 
+.privacy-content {
+    text-align: center;
+    width: 80%!important;
+    position: absolute!important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.privacy-content>h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 15px 0;
+    color: #fff;
+}
+
+.privacy-content > p {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+    font-weight: normal;
+}
+.policy-content {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.privacy-legend {
+    width: 40%;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.privacy-description {
+    width: 55%;
+}
+.privacy-legend > h2 {
+    color: #174567;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.policy-content p {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+}
+
+.transit-chart {
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 3%;
+}
+.transit-content {
+    text-align: center;
+    margin-top: 2%;
+    color: #666;
+}
+
+.transit-content>p {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.transit-content ul {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 3rem;
+    width: 80%;
+    font-size: 18px;
+}
+
+.transit-disclaimer {
+    background: #bed7e9;
+    color: #666;
+    padding: 15px;
+}
+.transit-disclaimer>p {
+    margin-bottom: 0;
+    margin: 0 auto;
+    width: 55%;
+    font-size: 18px;
+}

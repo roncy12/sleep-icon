@@ -16,7 +16,9 @@
       "custom-product-certification.html": "/product-certification/",
       "custom-faqs.html" : "/faqs/",
       "custom-warranty-policy.html" : "/warranty-claim/",
-      "custom-categ.html": "/custom-categ/"
+      "custom-categ.html": "/custom-categ/",
+      "custom-shipping-chart": "/shipping-transit-chart/",
+      "custom-privacy-policy": "/privacy-policy/"
     },
     "category": {
       "custom-category.html": "/custom-category/"
