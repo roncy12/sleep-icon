@@ -716,9 +716,8 @@ input.button.button--primary.form-prefixPostfix-button--postfix.srch-button {
     -ms-flex-align: center;
     align-items: center;
     text-transform: capitalize;
-    margin-left: -8em;
+    margin-left: -7.2em;
 }
-
 div.stamped-review {
     position: relative;
 }
@@ -777,11 +776,11 @@ div.stamped-review {
 }
 
 @media only screen and (max-width: 414px){
-img.header-logo-image.footer-logo {
-    position: relative;
-    margin-left: -217%;
-    margin-top: 61%;
-}
+    img.header-logo-image.footer-logo {
+        position: relative;
+        margin-left: -217%;
+        margin-top: 40%;
+    }
 .header-logo-image {
     max-height: 2.35714rem;
     display: block;
@@ -888,7 +887,7 @@ input.button.button--primary.form-prefixPostfix-button--postfix.srch-button {
     position: relative;
 }
 header.header.header-bannerimg.sticky-fix {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1020;
     height: 9em;

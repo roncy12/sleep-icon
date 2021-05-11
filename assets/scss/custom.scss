@@ -291,15 +291,21 @@ transform:translateX(-100%);
      animation-duration: 5000ms;
 }
 
-body{
-    margin: 0;
+html,body {
+    
+    overflow-x: hidden;
+    margin: 0 auto;
     padding: 0;
-    font-family: Montserrat,sans-serif!important;
-    line-height: 1.8;
-    font-size: 1rem;
-    font-weight: 400;
+    position: relative;
 }
 
+body{
+    height: auto;
+}
+
+.body {
+    margin-top: -9.5rem;
+}
 .login-row {
     margin-top: 6rem;
     display: flex;
@@ -348,9 +354,10 @@ a.social-media.icon {
 }
 /** End Of Body & Container **/
 .main.full {
-    margin: 0 -.75rem;
+    margin: 0;
     max-width: none;
     width: auto;
+    padding: 0;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat,sans-serif!important;
@@ -384,6 +391,23 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex-direction: column;
     flex-direction: column;
 }
+.top-flex>div {
+    margin-left: 1em;
+}
+.top-flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+div a.top-btn {
+
+    transition: 0;
+    background: #00b8df;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
 /*
 header.header.header-bannerimg {
     background: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/vector-smart-object1.png?t=1582162975&_ga=2.40243946.977186237.1582159027-2022119561.1571639426);
@@ -398,8 +422,9 @@ header.header.header-bannerimg {
 header.header.header-bannerimg {
     background: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/vector-smart-object1.png?t=1582162975&_ga=2.40243946.977186237.1582159027-2022119561.1571639426);
     background-color: #132448;
-    /*height: 8em;*/
-    top: 4em;
+    height: 8em;
+    /* top: 4em; */
+    /* position: relative; */
 }
 a.navPages-action {
     color: #ffffff;
@@ -454,14 +479,13 @@ a.navPages-action {
     top: 0px;
 }*/
 .header-div {
-
     display: flex;
     width: 96%;
     align-items: center;
     position: absolute;
     min-width: 100%;
-    height: auto;
-    padding-bottom: 21px;
+    height: 8em;
+    padding-bottom: 0;
     top: 0;
 }
 .heroCarousel-slide .heroCarousel-image {
@@ -497,8 +521,8 @@ section.homepage-blog>h5>a {
 
 
 .top-header div {
-    padding: 0 4px;
-    position: fixed;
+    padding: 0;
+    position: relative;
 }
 
 .top-header {
@@ -936,15 +960,12 @@ a.test-mattress-button {
     padding: 0;
 }
 
-.body {
-    margin-bottom: 0;  
-    margin-top: 0;
-}
 
-body {
-    height: 100%;
-    overflow-x: hidden;
-}
+
+// body {
+//     height: 100%;
+//     overflow-x: hidden;
+// }
 
 .fa, .fas {
     font-weight: 900;
@@ -1171,14 +1192,18 @@ span.logo-links {
     color: #174567;
     font-weight: 600;
 }
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
 /* BLOG */
 .image-banner {
     background-image: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/blog-banner.jpg?t=1599722308&amp;_ga=2.46110564.1918111745.1599697146-2022119561.1571639426);
     background-size: cover;
     display: block;
-    margin-top: 12em;
+    margin-top: 9em;
     margin-bottom: 0;
     width: 100%;
     padding: 0;
@@ -1187,10 +1212,11 @@ span.logo-links {
     position: relative;
 }
 
-.body {
-    margin: 0;
-    margin-top: -12em;
-}
+// .body {
+//     margin: 0;
+//     margin-top: -12em;
+//     overflow-x: hidden;
+// }
 
 .blog-center {
     position: absolute;
@@ -1796,7 +1822,7 @@ div.certification-banner:hover{
     margin: 0 auto;
     -ms-flex-pack: center;
     justify-content: center;
-    /* margin-top: 9em; */
+    margin-top: 1.6em;
     position: relative;
     -ms-flex-align: center;
     align-items: center;
@@ -1834,7 +1860,7 @@ header.header.header-bannerimg.sticky-fix {
     height: 8em;
 }
 .sticky-fix {
-    position: sticky;
+    position: fixed;
 }
 .top-header.sticky {
     top: 0;

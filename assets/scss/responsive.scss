@@ -51,6 +51,9 @@
 @media only screen and (max-width: 1200px) {
 
 /** Homepage **/
+.top-header.rel {
+    display: none;
+}
 .top-header.sticky {
     /* position: relative; */
     display: none;
