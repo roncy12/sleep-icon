@@ -190,13 +190,14 @@
 }
 
 .heroCarousel-title {
-    color: $carousel-title-color;
-    font-size: fontSize("small");
-    margin-top: 0;
+    // color: $carousel-title-color;
+    // font-size: fontSize("small");
+    // margin-top: 0;
 
-    @include breakpoint("medium") {
-        font-size: fontSize("hero");
-    }
+    // @include breakpoint("medium") {
+    //     font-size: fontSize("hero");
+    // }
+        font: caption;
 }
 
 .heroCarousel-description {
