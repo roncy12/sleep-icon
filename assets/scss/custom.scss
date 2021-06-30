@@ -594,14 +594,6 @@ label {
     position: relative;
 }
 
-a.navPages-action {
-    color: #132448 !important;
-    font-weight: 900;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: capitalize;
-}
 
 .navPages-action {
     color: #333333;
@@ -1044,14 +1036,13 @@ li.navUser-item.navUser-item--account a {
 }
 
 a.navPages-action {
-    color: #132448!important;
+    color: #132448 !important;
     font-weight: 900;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 18px;
-    text-transform: unset;
+    text-transform: capitalize;
 }
-
 .navUser {
     padding: 0 1.5rem;
     position: relative;
@@ -1062,11 +1053,10 @@ a.navPages-action {
 }
 
 .navUser-action {
-    color: #ffffff;
+    color: #132448;
     font-weight: 300;
     padding: 1rem 0.78571rem;
     text-decoration: none;
-
 }
 
 strong, b {
