@@ -1,5 +1,48 @@
-@media only screen and (max-width: 1900px) {
+@media only screen and (max-width: 1600px) {
+    .heroCarousel-content {
+        left: 10%;
+        right: auto;
+        top: 50%;
+        width: 36% !important;
+        text-align: left;
+        background-color: transparent;
+    }
+    .us-banner-description {
+        padding-top: 3%;
+    }
+    a.header-logo__link .header-logo-image-container {
+        left: -60px;
+        margin-top: 8px;
+    }
+    
+    .another-mattress-description.night-desc {
+        width: 40%;
+        margin-left: 7em;
+    }
+    .another-mattress-description.cert-prod {
+        margin-left: 3em;
+    }
+    
+    .another-mattress-description.long-trm {
+        margin-left: 3em;
+    }
+    .another-mattress-description.feature-m {
+        margin-left: 3em;
+        color: #fff;
+        font-family: Almarai !important;
+        font-size: 18px;
+    }
+}
 
+@media only screen and (max-width: 1500px) {
+    .heroCarousel-content {
+        left: 10%;
+        right: auto;
+        top: 50%;
+        width: 35% !important;
+        text-align: left;
+        background-color: transparent;
+    }
 }
 @media only screen and (max-width: 1425px) {
 
@@ -11,6 +54,22 @@
     left: 0;
     margin-right: auto;
 }
+    .banner-div1 {
+    background: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/banner-us-flash.png?t=1623735492);
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: right;
+}
+.most-affordable-desc h2 {
+    width: 50%;
+    line-height: 1.3;
+    color: #174567;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: capitalize;
+}    
 }
 
 @media only screen and (max-width: 1350px) {
@@ -22,8 +81,13 @@
     left: 0;
     margin-right: auto;
 }
-
-
+.heroCarousel-content {
+    width: 40% !important;
+}
+.us-banner-description {
+    padding-top: 3%;
+    margin-bottom: 5%;
+}
 }
 
 @media only screen and (max-width: 1309px) {
@@ -70,7 +134,7 @@ header.header.header-bannerimg.sticky-fix {
     position: absolute;
     right: 0;
     z-index: 10;
-    top: 40px;
+    top: 0;
 }
 .links-header {
     /* margin: auto; */
@@ -89,16 +153,9 @@ header.header.header-bannerimg.sticky-fix {
     padding-bottom: 20px;
     top: 0;
 }
-.header-logo__link {
-    background: none;
-    border-bottom: 0;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    padding: 0;
-    width: auto;
-    position: relative;
-    margin-top: 20%;
-    /* left: -77%; */
+.header-logo__link .header-logo-image-container {
+    margin-top: 18px !important;
+    left: -71px !important;
 }
 .header-logo {
     margin: 0;
@@ -108,22 +165,23 @@ header.header.header-bannerimg.sticky-fix {
     margin-bottom: 0;
 }
 .heroCarousel-slide .heroCarousel-image-wrapper {
-    max-height: 42.85714rem;
+    /* max-height: 42.85714rem; */
     margin-top: 10em;
+    max-height: 100%;
+    height: 100%!important;
 }
 
 .heroCarousel .slick-dots {
     bottom: 1.5rem;
     top: 55em;
 }
-    a.navPages-action {
-        color: #fff !important;
-        font-weight: 500;
-        letter-spacing: 1px;
-        text-decoration: none;
-        font-size: 14px;
-        text-transform: unset;
-
+a.navPages-action {
+    color: #132448 !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: unset;
 }
 
 .”blog” {
@@ -169,7 +227,7 @@ input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
 .navUser {
     padding: 0 0rem;
     position: relative;
-    right: -10em;
+    right: -14em;
     top: auto;
     transform: none;
     z-index: 50;
@@ -178,16 +236,13 @@ input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
 .navPages ul {
     list-style: none;
     text-transform: uppercase;
-    margin-left: 15em;
+    margin-left: 18em;
+    width: 65%;
 }
-
 .footer-info {
     margin: 0 auto;
     max-width: 100%;
     width: auto;
-
-
-
     font-size: 0;
     display: -ms-flexbox;
     display: flex;
@@ -250,10 +305,12 @@ article div.header-logo-image-container {
     margin-left: -1em;
 }
 
-.header-logo-image-container {
-    /* min-height: 84px; */
-    width: 110px;
+    
+    .heroCarousel-content {
+    width: 47% !important;
 }
+    
+    
 }
 
 @media only screen and (max-width: 1080px) {
@@ -267,12 +324,17 @@ article div.header-logo-image-container {
     z-index: 50;
 }
 .navPages ul {
-    width: 40%;
+    width: 100%;
     list-style: none;
     text-transform: uppercase;
     margin-left: 14em;
-    margin-top: -2em;
-} 
+    margin-top: 0em;
+    width: 51%;
+}
+    .header-logo__link .header-logo-image-container {
+    margin-top: 18px !important;
+    left: -40px !important;
+}
     .flex-container {
         display: flex;
         max-width: 85%;
@@ -348,15 +410,15 @@ input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
 
 
 @media only screen and (max-width: 1024px) {
-    .navUser {
-        padding: 0 0rem;
-        position: relative;
-        right: -14em;
-        top: auto;
-        transform: none;
-        z-index: 50;
-        width: 74%;
-    }
+.navUser {
+    padding: 0 0rem;
+    position: relative;
+    top: auto;
+    transform: none;
+    z-index: 50;
+    width: 100%;
+    left: 12em;
+}
     article.sectionarticle .blog-thumbnail.blog-img {
     margin-top: -8em;
 }
@@ -433,10 +495,15 @@ input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
     margin-right: auto;
 }
 .navPages ul {
-    width: 40%;
+    width: 50%;
     list-style: none;
     text-transform: uppercase;
     margin-left: 19em;
-    margin-top: -2em;
+    margin-top: 0;
 }
+.heroCarousel-content {
+    width: 60% !important;
+    max-height: initial;
+}
+    
 }

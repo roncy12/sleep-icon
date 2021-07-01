@@ -156,7 +156,7 @@ article div.header-logo-image-container .header-logo-image.footer-logo {
 .heroCarousel-description {
     max-width: 100%;
     font-weight: 600;
-    color: #222;
+    color: #fff;
     font-size: 20px;
 }
 
@@ -221,6 +221,22 @@ article.sectionarticle .blog-thumbnail.blog-img {
 input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
         width: 13em;
 }
+.heroCarousel-content {
+    width: 70% !important;
+    max-height: initial;
+}
+    
+.flex-mattrees-section.us {
+        margin-top: 45px;
+        flex-wrap: wrap; 
+        flex-direction: column;
+    }
+    .flex-mattrees-section div.usbanner-div {
+        width: 100%;
+    }
+        .flex-mattrees-section>div.banner-div1 {
+        width: 100%;
+    }
 }
 
 
@@ -349,7 +365,7 @@ span.shop-button {
     padding: 0;
     position: relative;
     width: 100%;
-    margin-top: 16em;
+    margin-top: 0;
     max-width: 100%;
     background-size: cover;
 }
@@ -620,8 +636,53 @@ button.accordion-faqs:hover, button.accordion-faqs:focus, .button.accordion-faqs
     transition: max-height .6s ease-out;
     width: 100%;
 }
+    
+.heroCarousel-content {
+    width: 75% !important;
+    max-height: initial;
+    position: relative;
+    left: 2em;
+    top: 12em;
+    margin: 0;
 }
-
+.button--primary {
+    border-color: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #132448;
+    padding: 15px 15px 15px 15px;
+    font-weight: 700;
+    border-radius: 8px;
+    font-family: Almarai !important;
+}
+.heroCarousel-description {
+    max-width: 100%;
+    font-weight: 600;
+    color: #132448;
+    font-size: 20px;
+    font-family: Almarai !important;
+}
+ .heroCarousel-title {
+    font-size: 56px;
+    color: #132448;
+    font-weight: 400;
+    text-transform: inherit;
+    font-family: Almarai !important;
+}   
+    
+    
+}
+@media only screen and (max-width: 637px){
+    .heroCarousel-content {
+        width: 85% !important;
+    }
+}
+@media only screen and (max-width: 550px){
+    .heroCarousel-content {
+        top: 0;
+    }
+}
 @media only screen and (max-width: 540px){
 
 .stamped-review-avatar {
@@ -667,20 +728,20 @@ img.header-logo-image.footer-logo {
     margin-top: 35%;
 }
 
-.heroCarousel-content {
-    width: 90%;
-    background-color: transparent;
-    right: 15%;
-    padding: 1.5rem;
-    margin: 0 auto;
-    position: relative;
-    right: 0;
-    margin-top: 25%;
-    transform: translateY(-50%);
-    max-height: 80%;
-    overflow: auto;
-    text-align: left;
-}
+//.heroCarousel-content {
+//    width: 90%;
+//    background-color: transparent;
+//    right: 15%;
+//    padding: 1.5rem;
+//    margin: 0 auto;
+//    position: relative;
+//    right: 0;
+//    margin-top: 25%;
+//    transform: translateY(-50%);
+//    max-height: 80%;
+//    overflow: auto;
+//    text-align: left;
+//}
 .heroCarousel .slick-next, .heroCarousel .slick-prev {
     top: 47%;
     transform: translateY(-50%);
@@ -970,15 +1031,7 @@ input.button.button--primary.form-prefixPostfix-button--postfix.srch-button {
     color: #222;
     font-size: 20px;
 }  
-.heroCarousel-content {
-    margin-top: 45%;
-    overflow: auto;
-    left: 3%;
-    width: 100% !important;
-    text-align: left;
-    background-color: transparent;
-    position: relative;
-}
+
 header.header.header-bannerimg.sticky-fix {
     position: fixed;
     top: 0;
