@@ -77,7 +77,12 @@
 
         {{> components/common/header }}
         {{> components/common/body }}
-        {{> components/common/footer }}
+        {{#if theme_settings.enable_simple_footer}}
+            {{> components/f/footer/simple-footer }}
+        {{else}}
+            {{> components/common/footer }}
+        {{/if}}
+  
 
         <script>window.__webpack_public_path__ = "{{cdn 'assets/dist/'}}";</script>
         <script src="{{cdn 'assets/dist/theme-bundle.main.js'}}"></script>
@@ -170,18 +175,17 @@
               }
                 
                 
-                        $(function () {
-            var slickOpts = {
-                dots: true,
-                infinite: true,
-                speed: 2000,
-                autoplay: true
-            };
-            // Init the slick
-            $('.single-item').slick(slickOpts);
-            var slickEnabled = true;
-        
-                });
+            $('.variable-width').slick({
+              dots: true,
+              infinite: true,
+              speed: 300,
+              slidesToShow: 1,
+              centerMode: true,
+              variableWidth: true,
+              arrows: true
+            });
+		
+		
           </script>
 
         {{{footer.scripts}}}
