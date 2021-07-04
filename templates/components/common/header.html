@@ -15,10 +15,12 @@
 
 <header class="header header-bannerimg" id="myHeader" role="banner">
     <div class="header-div ">
-         <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
+    <div>
+        <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
              <span class="mobileMenu-toggleIcon">Toggle menu</span>
          </a> 
-    <div class="links-header">
+    </div>
+    <div class="links-header logo-is">
         {{#if page_type '===' 'default'}}
         <div class="header-logo header-logo--{{theme_settings.logo-position}}">
             {{> components/common/store-logo}}
@@ -37,7 +39,7 @@
         </div>
     </div>
 
-    <div class="links-header">
+    <div class="links-header head-cart-icon">
       {{> components/common/navigation}}
     </div>
 </div>

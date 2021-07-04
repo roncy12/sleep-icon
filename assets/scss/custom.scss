@@ -355,7 +355,7 @@ body{
     display: flex;
 }
 a.mobileMenu-toggle {
-    top: 0%;
+    top: 20%;
 }
 .ads-content-text p {
     font-size: 18px;
@@ -398,6 +398,16 @@ a.social-media.icon {
     max-width: 100%;
     background-size: cover;
 }
+.dropdown--quickSearch.is-open {
+    display: block;
+    left: -296px !important;
+    outline: none;
+    right: 70% !important;
+    width: auto !important;
+    z-index: 50;
+    position: absolute;
+}
+
 /** End Of Body & Container **/
 .main.full {
     margin: 0;
@@ -446,9 +456,10 @@ div a.top-btn {
 }
 
 header.header.header-bannerimg {
-    background:#FFF;
+    background: #FFF;
     background-color: #FFF;
     height: 7em;
+    box-shadow: 0 4px 20px -10px #222;
 }
 .pagination-blog{
     max-width: 80%;
@@ -620,32 +631,36 @@ label {
 }
 
 .logo-footer ul {
+    display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
-    width: 50%;
-    margin: 0 auto;
+    -ms-flex-pack: justify;
+    justify-content: flex-end;
+    width: 70%;
+    margin: 0;
+    margin-left: auto;
 }
 .icon {
-    height: 1.4rem;
-    width: 3rem;
+    height: 4rem;
+    width: auto;
     display: -ms-flexbox;
     display: flex;
     vertical-align: middle;
 }
-
-.icon svg {
-    display: inline-block;
-    fill: #ffffff;
-    /* height: 100%; */
-    /* vertical-align: top; */
-    /* width: 100%; */
+.logo-footer ul>div {
+    margin: 0 8px;
 }
+.icon svg {
 
+    fill: #fff;
+    background: #132448;
+    border-radius: 5px;
+    padding: 4px;
+}
 
 .footer-copyright > .powered-by {
     color: #f8f7f7;
-    font-size: 12px;
+    font-size: 18px;
     margin: 0;
 }
 
@@ -667,7 +682,7 @@ label {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    height: 4em;
+    height: auto;
 }
 
 .fab, .far {
@@ -1121,21 +1136,21 @@ span.logo-links {
     display: flex;
     margin-left: 1em;
 }
-.homepage-adverts-section {
-    background: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/only-what-you.png?t=1601625615&_ga=2.8770485.107696235.1601252207-2022119561.1571639426);
-    background-repeat: no-repeat;
-    height: 650px;
-    width: 100%;
-    background-size: cover;
-    position: relative;
-    margin-bottom: 3%;
-}
+// .homepage-adverts-section {
+//     background: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/only-what-you.png?t=1601625615&_ga=2.8770485.107696235.1601252207-2022119561.1571639426);
+//     background-repeat: no-repeat;
+//     height: auto;
+//     width: 100%;
+//     background-size: cover;
+//     position: relative;
+//     margin-bottom: 3%;
+// }
 
-.ads-abs {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-}
+// .ads-abs {
+//     position: absolute;
+//     top: 10%;
+//     left: 10%;
+// }
 .aboutus-paragraph p {
     font-size: 18px;
 }
@@ -1158,10 +1173,11 @@ span.logo-links {
 .ads-text>span {
     font-size: 18px;
 }
-.ads-content>div>div>h3{
+.ads-content > div > div > h3 {
     margin-bottom: 0;
     color: #174567;
     font-weight: 600;
+    margin-top: 0;
 }
 .sticky {
     position: fixed;
@@ -1841,6 +1857,7 @@ header.header.header-bannerimg.sticky-fix {
     z-index: 1020;
     height: 8em;
 }*/
+
 header.header.header-bannerimg.sticky-fix {
     top: 0;
     z-index: 1020;
@@ -2495,9 +2512,13 @@ input:checked+.terms-showMore #close{
     padding: 30px 0;
 }
 
-
-.certipur-us-content div{
-	position: relative;
+.certipur-us-content div img{
+    position: relative;
+    width: 100%;
+}
+.certipur-us-content div {
+    position: relative;
+    width: 50%;
 }
 .certipur-inside {
     text-align: center;
@@ -2866,7 +2887,7 @@ a.mattress-section-button {
 
 //HEADER SECTION
 .categ-banner {
-    margin-top: 12em;
+    margin-top: 9em;
 }
 
 span.Cart_label {
@@ -2893,11 +2914,12 @@ span.countPill.cart-quantity {
 
 .flex-mattrees-section div.usbanner-div {
     width: 50%;
+    height: auto;
 }
 .usbanner-div > img {
     width: 100%;
     position: relative;
-    height: 100%;
+    height: auto;
 }
 .flex-mattrees-section>div.banner-div1 {
     width: 50%;
@@ -2908,7 +2930,7 @@ span.countPill.cart-quantity {
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
 }
 .heroCarousel.slick-initialized {
     max-height: inherit;
@@ -2933,12 +2955,11 @@ span.countPill.cart-quantity {
 .us-banner-description {
     color: #fff;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 10%;
     width: 65%;
-    padding-top: 5%;
+    padding-top: 7%;
 }
-
 .us-banner-description>h3 {
     font-size: 28px;
     font-weight: 600;
@@ -3158,11 +3179,11 @@ a.mattress-button-aff {
 }
 
 .ads-content-text.green-context {
-    border-right: 1px solid black;
+    border-right: 1px solid #808080;
 }
 .green-context {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid  #808080;
+    border-right: 1px solid #808080;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -3180,7 +3201,7 @@ a.mattress-button-aff {
 section.heroCarousel.rev-carousel {
     background: url("https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/is-parallax-pattern.png?t=1623642972&_ga=2.224919322.1496872644.1623634006-1835193253.1617777202");
     background-repeat: no-repeat;
-    height: 750px;
+    height: auto;
     width: 100%;
     background-size: cover;
     position: relative;
@@ -3197,6 +3218,7 @@ section.heroCarousel.rev-carousel {
     width: 85%;
     margin: 0 auto;
     padding-left: 10%;
+    margin-bottom: 5rem;
 }
 
 .carousel-rev-con>div {
@@ -3338,12 +3360,16 @@ div > a.reviewreal-button {
     top: -7%;
 }
 .star-badge {
-    margin-top: 2%;
+    margin-top: 3%;
     margin-left: 10%;
 }
 .review-banner-con > div {
     width: 33%;
 }
+.powered-div>p {
+    margin-top: 0;
+}
+
 
 //EVERYTHING YOU NEED SECTION
 
@@ -3354,7 +3380,8 @@ div > a.reviewreal-button {
     margin-bottom: 3%;
     transform-style: preserve-3d;
     perspective: 1px;
-    height: 350px;
+    height: auto;
+    position: relative;
 }
 
 .ads-content-text {
@@ -3364,18 +3391,25 @@ div > a.reviewreal-button {
 }
 
 .ads-content {
+    display: -ms-flexbox;
     display: flex;
+    margin-top: 5%;
 }
 
 .ads-abs {
-    position: absolute;
+    position: relative;
     top: 55px;
-    left: 10%;
+    // left: 10%;
 }
-
+.homepage-adverts-section.parallax.every-need-section {
+    width: 80%;
+    margin-inline: auto;
+    height: auto !important;
+    margin-bottom: 10%;
+}
 .ads-content > div {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -3391,7 +3425,7 @@ div > a.reviewreal-button {
 }
 
 
-// BLOG
+// BLOG SECTION
 
 .blogPosts-more > a {
     background-color: rgb(19, 36, 72);
@@ -3416,12 +3450,13 @@ p.card-text.blogPost-publishedDate {
     color: rgb(19, 36, 72) !important;
 }
 
-// STILL IN DOUBT
+// STILL IN DOUBT SECTION
 .test-mattresses-section {
     width: 85%;
     background: url("https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/pre-footer-mattress-image.png?t=1623634068") 0% 0% / cover no-repeat;
     background-repeat: no-repeat;
     margin: 0px auto;
+    background-position: center;
 }
 
 .footer-mattress-title {
@@ -3440,7 +3475,7 @@ a.mattress-button {
 }
 .test-mattresses-title {
     text-align: left;
-    padding-top: 8%;
+    padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 13%;
 }
@@ -3451,7 +3486,7 @@ a.mattress-button {
     margin-bottom: 24px;
     line-height: 1;
 }
-// FOOTER
+// FOOTER SECTION
 .footer {
     background: rgb(255, 255, 255);
 }
@@ -3486,7 +3521,7 @@ a.like-us {
     border-radius: 3%;
     padding: 17px 15px;
     color: #132448 !important;
-    width: 70%;
+    width: 100%;
 }
 img.like-us-img {
     vertical-align: text-bottom;
@@ -3539,7 +3574,8 @@ img.like-us-img {
     margin-inline: auto;
     align-items: center;
 }
-// NIGHT SLEEP TRIAL PAGE
+
+// NIGHT SLEEP TRIAL PAGE 
 .night-sleep-banner {
     background: url("https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/star-parallax-background.png?t=1624339954");
     background-repeat: no-repeat;
@@ -3794,4 +3830,257 @@ background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 padding: 70px;
+}
+
+
+
+/**********************************
+ ******ICON SLEEP TRUTH PAGE******
+**********************************/
+
+
+// IS-TRUTH
+.categ-banner{
+    position: relative;
+}
+.categ-banner>img {
+    width: 100%;
+    position: relative;
+}
+.truth-banner-text {
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    color: #fff;
+}
+.truth-banner-text h2 {
+    color: #fff;
+    text-transform: inherit;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 36px;
+}
+.truth-banner-text h4 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.truth-banner-text p {
+    width: 50%;
+    font-size: 18px;
+}
+.truth-behind{
+    width: 50%;
+    margin: 0 auto;
+}
+.truth-behind {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #132448;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.truth-behind h2 {
+    color: #132448;
+    font-size: 32px;
+    font-weight: 600;
+}
+.flexdiv100{
+    display: flex;
+    max-width: 100%;
+}
+.flexdiv100>div {
+    width: 50%;
+}
+
+.arrow-content {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.arrow-content p {
+    width: 65%;
+    color: #132448;
+    font-size: 18px;
+    font-weight: 600;
+}
+.arr-content-div {
+    top: 5%;
+    position: relative;
+}
+// REVIEW SECTION
+.review-message-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 25px;
+    position: relative;
+}
+.four-review-con {
+    width: 95%;
+    margin-inline: auto;
+    margin-top: 5%;
+    position: relative;
+}
+
+.review-message-section div>img {
+    width: 100%;
+    position: relative;
+}
+.review-msg-con {
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    width: 20%;
+}
+
+.review-msg-con1 {
+    position: absolute;
+    top: 20%;
+    width: 20%;
+    margin-left: 2%;
+}
+.satisfaction-rev-con>img {
+    width: auto;
+    height: auto;
+    max-width: 2em;
+}
+
+.satisfaction-rev-con {
+    display: grid;
+    grid-template-columns: 2.7em 1fr;
+}
+.satisfaction-rev-con>p {
+    margin-top: 2px;
+}
+.review-quote-banner {
+    width: 95%;
+    margin-inline: auto;
+    background: #132448;
+    padding-top: 2%;
+    padding-bottom: 0.4%;
+    text-align: center;
+    color: #fff;
+    margin-top: 2%;
+}
+.review-msg-con1 p {
+    font-size: 18px;
+    color: #132448;
+}
+
+.satisfaction-rev-con p {
+    font-weight: 800;
+    color: #132448;
+}
+// REVIEW QUOTES
+.customer-rev-con {
+    width: 48%;
+    text-align: center;
+    margin-inline: auto;
+    color: #132448;
+    font-weight: 600;
+    margin-top: 4%;
+}
+
+.right-img-rev>img {
+    margin: 40px;
+}
+.left-img-rev {
+    display: grid;
+    justify-content: flex-end;
+    place-items: center;
+    position: relative;
+}
+.left-img-rev > div > img {
+    position: relative;
+}
+.left-img-desc {
+    position: absolute;
+    top: 40%;
+    width: 50%;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 3%;
+}
+.left-img-con {
+    width: 80%;
+}
+
+.ques-rev-con {
+
+    display: flex;
+    max-width: 100%;
+}
+
+.ques-rev-con > div {
+    width: 50%;
+}
+
+.review-cen-text {
+    text-align: center;
+    color: #132448;
+    font-weight: 600;
+}
+.review-cen-text h2 {
+    color: #132448;
+    font-weight: 700;
+}
+
+.cta-istruth {
+    background: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/is-parallax-pattern.png?t=1623642972&_ga=2.224919322.1496872644.1623634006-1835193253.1617777202);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 3%;
+    text-align: center;
+    margin-top: -2em;
+    background-attachment: fixed;
+}
+
+div > a.reviewreal-button.is-truth {
+
+    position: absolute;
+    left: 43%;
+    text-align: center;
+}
+
+a.is-truth {
+    background: #fff;
+    color: #132448 !important;
+    text-transform: none;
+    text-decoration: none;
+    padding: 18px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.reviews-real-con {
+    background: #e2e8ed;
+    padding: 15px;
+}
+
+.carousel-truth-con {
+    width: 43em !important;
+    margin-inline: auto;
+    padding: 40px;
+    color: #132448 !important;
+}
+
+.heroCarousel-slide.review-istruth {
+    background: #fff;
+    width: 100rem !important;
+    margin: 0 18px;
+    height: 31em;
+    border-radius: 35px;
+    margin-bottom: 2em;
+}
+div#review-truthpage img {
+    width: auto;
+    height: 1.3em;
+    margin-top: 4px;
 }

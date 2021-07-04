@@ -78,7 +78,8 @@
         {{> components/common/header }}
         {{> components/common/body }}
         {{#if theme_settings.enable_simple_footer}}
-            {{> components/f/footer/simple-footer }}
+        
+            {{> components/common/footer }}
         {{else}}
             {{> components/common/footer }}
         {{/if}}
@@ -161,7 +162,7 @@
  
             
             <script type="text/javascript">
-              window.onscroll = function() {myFunction()};
+              window.onscroll = function() { myFunction() };
 
               var header = document.getElementById("myHeader");
               var sticky = header.offsetTop;
@@ -174,18 +175,6 @@
                 }
               }
                 
-                
-            $('.variable-width').slick({
-              dots: true,
-              infinite: true,
-              speed: 300,
-              slidesToShow: 1,
-              centerMode: true,
-              variableWidth: true,
-              arrows: true
-            });
-		
-		
           </script>
 
         {{{footer.scripts}}}

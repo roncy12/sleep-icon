@@ -53,6 +53,9 @@
         font-family: Almarai !important;
         font-size: 18px;
     }
+    .logo-footer ul {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 1500px) {
@@ -78,11 +81,11 @@
         margin-top: 0;
         width:auto;
     }
-    .heroCarousel.rev-carousel .slick-dots {
-        text-align: left;
-        left: 17.5%;
-        top: 42em;
-    }
+    // .heroCarousel.rev-carousel .slick-dots {
+    //     text-align: left;
+    //     left: 17.5%;
+    //     top: 42em;
+    // }
 }
 @media only screen and (max-width: 1425px) {
 
@@ -99,8 +102,7 @@
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    background-size: cover;
-    background-position: right;
+    background-size: contain;
 }
 .most-affordable-desc h2 {
     width: 50%;
@@ -142,6 +144,12 @@ a.like-us {
     position: absolute;
     top: 40%;
 }
+.heroCarousel.rev-carousel .slick-dots {
+    /* bottom: -128px; */
+    text-align: left;
+    left: 17.5%;
+    top: 42em;
+}
 
 }
 
@@ -171,6 +179,10 @@ a.like-us {
 .another-mattress-description.cert-prod h3 br{
     display: none;
 }
+.us-banner-description > h3 {
+
+    margin-top: 0;
+}
 }
 
 @media only screen and (max-width: 1309px) {
@@ -198,6 +210,18 @@ a.like-us {
 .carousel-rev-con {
     padding-left: 0;
 }
+
+.green-context {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.heroCarousel.rev-carousel .slick-dots {
+    /* bottom: -128px; */
+    text-align: left;
+    left: 6.5%;
+    top: 42em;
+}
+
 }
 
 @media only screen and (max-width: 1260px) {
@@ -227,17 +251,20 @@ a.like-us {
         position: absolute;
         top: 30%;
     }
-    .heroCarousel.rev-carousel .slick-dots {
-        text-align: left;
-        left: 17.5%;
-        top: 43em;
-    }
+    // .heroCarousel.rev-carousel .slick-dots {
+    //     text-align: left;
+    //     left: 17.5%;
+    //     top: 43em;
+    // }
 
 }
 
 @media only screen and (max-width: 1200px) {
 
 /** Homepage **/
+.us-banner-description {
+    width: 80%;
+}
 .top-header.rel {
     display: none;
 }
@@ -273,10 +300,10 @@ header.header.header-bannerimg.sticky-fix {
     height: 100%!important;
 }
 
-.heroCarousel .slick-dots {
-    bottom: 1.5rem;
-    top: 55em;
-}
+// .heroCarousel .slick-dots {
+//     bottom: 1.5rem;
+//     top: 55em;
+// }
 a.navPages-action {
     color: #132448 !important;
     font-weight: 700;
@@ -425,11 +452,11 @@ article div.header-logo-image-container {
 .another-mattress-description.long-trm {
     margin-left: 2em;
 }
-.heroCarousel.rev-carousel .slick-dots {
-    text-align: left;
-    left: 17.5%;
-    top: 45em;
-}
+// .heroCarousel.rev-carousel .slick-dots {
+//     text-align: left;
+//     left: 17.5%;
+//     top: 45em;
+// }
 .review-right-con > img {
     margin-left: 15% !important;
 }
@@ -556,6 +583,12 @@ input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
     margin-left: 15%;
     margin-top: 16px;
 }
+.heroCarousel.rev-carousel .slick-dots {
+    /* bottom: -128px; */
+    text-align: left;
+    left: 6.5%;
+    top: 44em;
+}
 
 }
 
@@ -655,9 +688,27 @@ a.navPages-action {
     text-transform: unset;
     text-transform: capitalize;
 }
+.heroCarousel.rev-carousel .slick-dots {
+    /* bottom: -128px; */
+    text-align: left;
+    left: 7.5%;
+    top: 44em;
+}
+
 }
 
 @media only screen and (max-width: 1000px) {
+    .us-banner-description > h3 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    .us-banner-description {
+        margin-left: 3% !important;
+        line-height: 1.3;
+        width: 85%;
+    }
 .stamped-review-avatar {
     position: absolute;
     bottom: 0;
