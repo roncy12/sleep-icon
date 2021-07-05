@@ -2,6 +2,16 @@
     a.like-us {
         width: 85%;
     }
+    .mattress-left-img img {
+        position: relative;
+        object-fit: cover;
+        margin-top: -71px;
+        left: 10%;
+    }
+    .sleep-mattress-text {
+        margin: 0 auto;
+        margin-left: auto;
+    }
 }
 @media only screen and (max-width: 1750px) {
     .another-mattress-description.cert-prod {
@@ -15,6 +25,23 @@
         margin-top: -20px;
         width: auto;
     }
+    // ICON SLEEP TRUTH PAGE
+    .arrow-content p {
+        width: 100%;
+    }
+    .review-msg-con1 {
+        position: absolute;
+        top: 12%;
+        width: 20%;
+        margin-left: 2%;
+    }
+    .review-msg-con {
+        position: absolute;
+        top: 12%;
+        left: 2%;
+        width: 20%;
+    }
+
 }
 @media only screen and (max-width: 1600px) {
     a.like-us {
@@ -56,6 +83,70 @@
     .logo-footer ul {
         width: 80%;
     }
+    // ICON SLEEP TRUTH PAGE
+    .truth-behind {
+        width: 75%;
+        margin-inline: auto;
+    
+    }
+    
+    .truth-banner-text {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        color: #fff;
+    }
+    .customer-rev-con {
+        width: 85%;
+        text-align: center;
+        margin-inline: auto;
+        color: #132448;
+        font-weight: 600;
+        margin-top: 4%;
+    }
+    .sleep-mattress-text {
+    
+        margin-inline: auto;
+    }
+
+// ICON SLEEP TRUTH PAGE
+    .arrow-content {
+        padding-top: 0;
+    }
+    .arrow-content {
+        width: 85%;
+    }
+    .truth-banner-text {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        color: #fff;
+    }
+    .review-msg-con1 {
+        position: absolute;
+        top: 5%;
+        width: 20%;
+        margin-left: 3%;
+    }
+    .left-img-desc {
+        position: absolute;
+        top: 35%;
+        width: 50%;
+        color: #fff;
+        font-size: 18px;
+        margin-left: 10%;
+    }
+    .cta-istruth {
+
+        height: 400px;
+    }
+    .cta-istruth p {
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        width: 75%;
+        margin-inline: auto;
+    }
 }
 
 @media only screen and (max-width: 1500px) {
@@ -86,6 +177,28 @@
     //     left: 17.5%;
     //     top: 42em;
     // }
+    .mattress-left-img img {
+        position: relative;
+        object-fit: cover;
+        margin-top: -71px;
+        left: 5%;
+    }
+    // NIGHT SLEEP TRIAL PAGE
+    .position-absolute.bed-night-img {
+        z-index: 1030;
+        top: 62%;
+        width: 80%;
+    }
+    .track-order-div-pg {
+        background: #fff;
+        width: 55%;
+        margin: 0 auto;
+        padding-top: 4em;
+        padding-bottom: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
 }
 @media only screen and (max-width: 1425px) {
 
@@ -149,6 +262,25 @@ a.like-us {
     text-align: left;
     left: 17.5%;
     top: 42em;
+}
+// ICON SLEEP TRUTH PAGE
+.review-message-section div.content-rev > img {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.review-quote-banner {
+    margin-top: 6%;
+}
+.faq-banner-con.comparison-text p {
+    font-size: 18px;
+    text-align: center;
+    width: 95% !important;
+}
+.position-absolute.bed-night-img {
+    z-index: 1030;
+    top: 65%;
+    width: 80%;
 }
 
 }
@@ -256,7 +388,30 @@ a.like-us {
     //     left: 17.5%;
     //     top: 43em;
     // }
+    .mattress-left-img img {
+        position: relative;
+        object-fit: cover;
+        margin-top: -50px;
+    }
 
+      /****INNERPAGE***/
+      .arr-content-div {
+        top: 0;
+        position: relative;
+    }
+
+    .truth-banner-text h2 {
+        color: #fff;
+        text-transform: inherit;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 28px;
+    }
+
+    .truth-banner-text h4 {
+        font-weight: 600;
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -292,14 +447,11 @@ header.header.header-bannerimg.sticky-fix {
     margin-left: 25em;
     width: 65%;
 }
-
 .heroCarousel-slide .heroCarousel-image-wrapper {
-    /* max-height: 42.85714rem; */
-    margin-top: 10em;
+    margin-top: 9em;
     max-height: 100%;
-    height: 100%!important;
+    height: 100% !important;
 }
-
 // .heroCarousel .slick-dots {
 //     bottom: 1.5rem;
 //     top: 55em;
@@ -468,6 +620,37 @@ article div.header-logo-image-container {
     margin-right: auto;
     max-width: 70%;
 }
+.mattress-left-img img {
+    position: relative;
+    object-fit: cover;
+    margin-top: -35px;
+
+}
+
+// NIGHT SLEEP TRIAL PAGE
+.night-sleep-banner {
+    background: url("https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/star-parallax-background.png?t=1624339954");
+    background-repeat: no-repeat;
+    height: 680px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 20%;
+    background-attachment: fixed;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+.bed-night-text {
+    top: 20%;
+}
+.position-absolute.bed-night-img {
+    z-index: 1030;
+    top: 70%;
+    width: 80%;
+}
 
 }
 
@@ -589,7 +772,50 @@ input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
     left: 6.5%;
     top: 44em;
 }
+.mattress-left-img img {
+    position: relative;
+    object-fit: cover;
+    margin-top: -25px;
 
+}
+
+.truth-behind {
+    width: 85%;
+    margin-inline: auto;
+}
+
+
+.truth-banner-text p {
+    width: 70%;
+    /* font-size: 18px; */
+    font-size: 1em;
+}
+.review-msg-con1 p {
+    font-size: 16px;
+    color: #132448;
+}
+.mattress-left-img img {
+    margin-top: -25px;
+}
+.cta-istruth h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 14% !important;
+    text-transform: inherit;
+}
+.logo-footer ul {
+    width: auto;
+}
+.right-side-con.rght h4 {
+    font-size: 20px !important;
+}
+.right-side-con.rght p {
+    font-size: 20px !important;
+}
+.right-side-con.rght a.learn-comp {
+    width: 100% !important;
+}
 }
 
 
@@ -694,7 +920,35 @@ a.navPages-action {
     left: 7.5%;
     top: 44em;
 }
-
+.mattress-left-img img {
+    position: relative;
+    object-fit: cover;
+    margin-top: -10px;
+}
+// NIGHT SLEEP TRIAL PAGE
+.position-absolute.bed-night-img {
+    z-index: 1030;
+    top: 75%;
+    width: 80%;
+}
+.track-order-div-pg {
+    background: #fff;
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.steps.s1, .steps.s3 {
+    border-right: 1px solid transparent;
+}
+.steps.s1 hr {
+    display: none;
+}
+.steps.s2>hr {
+    display: none;
+}
 }
 
 @media only screen and (max-width: 1000px) {

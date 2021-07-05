@@ -16,17 +16,19 @@
       "custom-product-certification.html": "/product-certification/",
       "custom-warranty-policy.html" : "/warranty-claim/",
       "custom-categ.html": "/custom-categ/",
-      "custom-shipping-chart": "/shipping-transit-chart/",
+      "shipping-transit-chart-page.html": "/shipping-transit-chart/",
       "custom-privacy-policy": "/privacy-policy/",
       "night-sleep-trial.html": "/sleep-trial/",
-      "IS-Truth.html": "/the-truth/"
+      "IS-Truth.html": "/the-truth/",
+      "is-comparison.html": "/comparison/",
+      "icon-sleep-story.html":"/icon-sleep-story/"
     },
     "category": {
       "custom-category.html": "/custom-category/"
     }
   },
   "normalStoreUrl": "https://icon-sleep.com",
-  "port": "3006",
+  "port": "3000",
   "username": "stencil",
   "token": "1d7idid9jrptmq9dpcth3wbx98wt72"
 }

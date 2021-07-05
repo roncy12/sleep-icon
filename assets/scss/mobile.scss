@@ -34,6 +34,35 @@
         left: 7.5%;
         top: 47em;
     }
+    .mattress-left-img img {
+        position: relative;
+        object-fit: cover;
+        margin-top: 0px;
+    }
+    .sleep-mattress-text {
+        padding-top: 0;
+    }
+    .flexdiv100.sleep-mattress-div {
+        height: auto;
+    }
+
+    .left-img-desc {
+        position: absolute;
+        top: 29%;
+        width: 60%;
+        color: #fff;
+        font-size: 18px;
+        margin-left: 8%;
+    }
+    .night-sleep-banner {
+        height: 600px;
+    }
+    .right-side-con.rght h4 {
+        font-size: 18px !important;
+    }
+    .right-side-con.rght p {
+        font-size: 18px !important;
+    }
 }
 @media only screen and (max-width: 900px) {
 
@@ -129,7 +158,57 @@ article div.header-logo-image-container .header-logo-image.footer-logo {
     top: 48em;
 }
 
-
+.review-message-section {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 25px;
+    position: relative;
+    grid-row-gap: 65px;
+}
+// INNERPAGE
+.flexdiv100 > div {
+    width: 80%;
+    margin-inline: auto;
+}
+.flexdiv100 {
+    display: -ms-flexbox;
+    display: grid;
+    max-width: 100%;
+}
+.arr-content-div {
+    top: 5%;
+    position: relative;
+}
+.review-message-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    position: relative;
+    grid-row-gap: 65px;
+}
+.review-message-section div.content-rev > img {
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+.review-msg-con1.con2 {
+    top: 65%;
+    width: 35%;
+    margin-left: 6%;
+}
+.review-msg-con1 {
+    position: absolute;
+    top: 11%;
+    width: 35%;
+    margin-left: 7%;
+}
+.flexdiv100.sleep-mattress-div.sleep-story {
+    display: flex;
+}
+.flexdiv100.sleep-mattress-div.sleep-story.ss-1 {
+    display: flex;
+}
 }
 @media only screen and (max-width: 867px) {
     article.sectionarticle .blog-thumbnail.blog-img {
@@ -173,6 +252,16 @@ article div.header-logo-image-container .header-logo-image.footer-logo {
     margin-bottom: 0;
     height: auto;
 }
+.position-absolute.bed-night-img {
+    z-index: 1030;
+    top: 80%;
+    width: 80%;
+}
+.budget-div.row .col-lg-6.col-md-6.col-sm-12 {
+    padding: 0;
+    max-width: 50%;
+}
+
 }
 
 @media only screen and (max-width: 812px) {
@@ -345,7 +434,20 @@ div > a.reviewreal-button {
     margin-left: 19%;
     margin-top: 79px;
 }
-
+.review-msg-con1 {
+    position: absolute;
+    top: 8%;
+    width: 35%;
+    margin-left: 7%;
+}
+.review-msg-con1.con2 {
+    top: 63%;
+    width: 35%;
+    margin-left: 6%;
+}
+.night-sleep-banner {
+    height: 600px;
+}
 }
 
 
@@ -508,6 +610,8 @@ span.shop-button {
 .homepage-adverts-section.parallax.every-need-section {
     width: 95%;
 }
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -615,7 +719,35 @@ a.navPages-action {
     position: absolute;
     top: 30%;
 }
-
+.flexdiv100.sleep-mattress-div {
+    flex-direction: column;
+}
+.flexdiv100 > div {
+    width: 100%;
+}
+.mattress-left-img img {
+    left: 3%;
+}
+.flexdiv100 {
+    flex-direction: column;
+}
+.left-img-desc {
+    position: absolute;
+    top: 28%;
+    width: 65%;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 6%;
+}
+.flexdiv100.sleep-mattress-div.sleep-story.ss-1 {
+    flex-direction: column-reverse;
+}
+.sleepm-div.our-story-div > img {
+    padding-left: 3em;
+    /* padding-right: 6em; */
+    margin: 0 auto;
+    width: 95%;
+}
 }
 
 
@@ -647,7 +779,22 @@ a.navPages-action {
         left: 40.5%;
         top: 52em;
     }
-    
+    .left-img-desc p {
+        margin-top: 0;
+    }
+    .review-msg-con1 {
+        position: absolute;
+        top: 6%;
+        width: 35%;
+        margin-left: 7%;
+    }
+    .review-msg-con1.con2 {
+        top: 61%;
+        width: 35%;
+        margin-left: 6%;
+    }
+
+
 }
 
 
@@ -825,6 +972,40 @@ button.accordion-faqs:hover, button.accordion-faqs:focus, .button.accordion-faqs
     padding: 0.875rem;
     width: auto;
 }
+.ques-rev-con {
+    flex-direction: column;
+}
+.ques-rev-con > div {
+    width: 100%;
+}
+.left-img-desc p {
+    margin-top: 0;
+    font-size: 20px;
+}
+.left-img-desc {
+    position: absolute;
+    top: 25%;
+    width: 50%;
+    color: #fff;
+    font-size: 24px;
+    margin-left: 11%;
+}
+.review-msg-con1 {
+    position: absolute;
+    top: 4%;
+    width: 35%;
+    margin-left: 7%;
+}
+.review-msg-con1.con2 {
+    top: 59%;
+    width: 35%;
+    margin-left: 6%;
+}
+.budget-div.row .col-lg-6.col-md-6.col-sm-12 {
+    padding: 0;
+    max-width: 50%;
+}
+
 
 }
 @media only screen and (max-width: 637px){
@@ -854,8 +1035,40 @@ button.accordion-faqs:hover, button.accordion-faqs:focus, .button.accordion-faqs
         left: 35.5%;
         top: 78em;
     }
+    .review-msg-con1 {
+        position: absolute;
+        top: 3%;
+        width: 40%;
+        margin-left: 7%;
+    }
+// NIGHT SLEEP TRIAL PAGE
+    .bed-night-text p {
+        width: 80% !important;
+    }
+    .night-sleep-banner {
+       height: 515px;
+    }
 }
 @media only screen and (max-width: 568px){
+    header.header.header-bannerimg {
+        background: #FFF;
+        background-color: #FFF;
+        height: 5em;
+        box-shadow: 0 4px 20px -10px #222;
+    }
+    a.mobileMenu-toggle {
+        top: 5%;
+    }
+    .navPages {
+        top: 0.5rem;
+    }
+    .navPages ul {
+        width: 95%;
+        list-style: none;
+        text-transform: uppercase;
+        margin-left: 1rem;
+        line-height: 0.4;
+    }
     .most-affordable-desc h2 {
         width: 65%;
         line-height: 1.3;
@@ -1035,7 +1248,63 @@ button.accordion-faqs:hover, button.accordion-faqs:focus, .button.accordion-faqs
         padding-bottom: 5%;
         padding-left: 13%;
     }
-
+    .review-message-section div.content-rev > img {
+        width: 100%;
+        position: relative;
+        height: 15rem !important;
+    }
+    .review-msg-con1 {
+        position: absolute;
+        top: 3%;
+        width: 40%;
+        margin-left: 4%;
+    }
+    .left-img-desc {
+        position: absolute;
+        top: 19%;
+        width: 54%;
+        color: #fff;
+        font-size: 20px;
+        margin-left: 8%;
+    }
+    .left-img-desc p {
+        margin-top: 0;
+        font-size: 18px;
+    }
+    .bed-night-text {
+        top: 12%;
+    }
+    .faqs-title {
+        text-align: left;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .faqs-desc {
+        text-align: left;
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        border-top: 1px solid #a9a9a9!important;
+    }
+    .budget-div.row .col-lg-6.col-md-6.col-sm-12 {
+        padding: 0;
+        max-width: 100%;
+    }
+    .is-features-div {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+        width: 80%;
+        margin-inline: auto;
+        place-content: center;
+        place-items: flex-start;
+        margin-top: 3em;
+    }
+    .cta-istruth.sleep-stry.mt-5 {
+        height: 300px;
+    }
 }
 
 @media only screen and (max-width:500px){
@@ -1194,7 +1463,65 @@ div.stamped-review {
     color: #132448;
     text-transform: uppercase;
 }
-
+.review-message-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    grid-column-gap: 25px;
+    position: relative;
+    grid-row-gap: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.review-msg-con1.con2 {
+    top: 54%;
+    width: 70%;
+    margin-left: 14%;
+}
+.review-msg-con1 {
+    position: absolute;
+    top: 3%;
+    width: 70%;
+    margin-left: 14%;
+}
+.review-msg-con1.con2.grid-con-rev {
+    top: 78%;
+    width: 70%;
+    margin-left: 15%;
+}
+.review-msg-con1.grid-con-rev1 {
+    top: 28%;
+    width: 70%;
+    margin-left: 14%;
+}
+.left-img-desc {
+    position: absolute;
+    top: 14%;
+    width: 70%;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 3%;
+}
+.track-order-div-pg {
+    background: #fff;
+    width: 86%;
+    margin: 0 auto;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.sleep-mattress-text.story-text p br {
+    display: none;
+}
+.flexdiv100.sleep-mattress-div.sleep-story {
+    margin-bottom: 3em;
+    height: auto;
+}
+.cta-istruth.sleep-stry.mt-5 h2 {
+    font-size: 20px;
+}
 
 }
 
@@ -1261,14 +1588,14 @@ header.header.header-bannerimg.sticky-fix {
     z-index: 1020;
     height: 9em;
 }
-    header.header.header-bannerimg {
-    height: 7em;
-    top: 0;
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 999;
-}
+//     header.header.header-bannerimg {
+//     height: 7em;
+//     top: 0;
+//     position: fixed;
+//     right: 0;
+//     left: 0;
+//     z-index: 999;
+// }
 .header-logo {
     height: auto;
     margin-left: auto;
@@ -1739,8 +2066,9 @@ article.sectionarticle .blog-thumbnail.blog-img {
     color: #ffffff;
     margin: 0;
 }
-
-
+ .night-sleep-banner {
+    height: 455px;
+ }
 }
 @media only screen and (max-width: 375px){
 .stamped-review-avatar {
@@ -1809,7 +2137,29 @@ article.sectionarticle .blog-thumbnail.blog-img {
     color: #132448;
     text-transform: uppercase;
 }
-
+.left-img-desc p {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.left-img-desc {
+    position: absolute;
+    top: 18%;
+    width: 70%;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 3%;
+}
+    .bed-night-text h2 {
+        font-size: 24px;
+    }
+    .track-order-div-pg {
+        width: 85%;
+        padding-top: 3em;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 2em;
+    }
 }
 @media only screen and (max-width: 360px){
 strong.author {
@@ -1930,6 +2280,19 @@ strong.author {
 .heroCarousel-content {
     width: 100% !important;
 }
+.left-img-desc {
+    position: absolute;
+    top: 17%;
+    width: 70%;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 3%;
+}
+.left-img-desc p {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.2;
+}
 }
 
 @media only screen and (max-width: 292px){
@@ -2047,5 +2410,13 @@ strong.author {
         line-height: 1.2;
         width: 85%;
         font-size: 10px;
+    }
+    .left-img-desc {
+        position: absolute;
+        top: 6%;
+        width: 70%;
+        color: #fff;
+        font-size: 20px;
+        margin-left: 3%;
     }
 }

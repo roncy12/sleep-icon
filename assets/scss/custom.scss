@@ -2423,6 +2423,7 @@ input+.terms-showMore {
     background-image: url(show.png);
     background-repeat: no-repeat;
     background-position: 100% 50%;
+    
 }
 
 input:checked+.terms-showMore+* {
@@ -2433,13 +2434,13 @@ input:checked+.terms-showMore+* {
 
 input+.terms-showMore+* {
     font-size: 15px;
-    padding-left: 5px;
+    padding-left: 15px;
     text-align: left;
     color: #666;
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s,overflow 1s;
-
+    border-bottom: 1px solid darkgray !important;
 }
 
 input[type="checkbox"] + label, input[type="radio"] + label {
@@ -3643,7 +3644,7 @@ img.like-us-img {
     }
     .mattress-left-img {
         position: relative;
-        height: 907px;
+        height: auto;
         width: 100%;
     }
 
@@ -3960,7 +3961,7 @@ padding: 70px;
     width: 95%;
     margin-inline: auto;
     background: #132448;
-    padding-top: 2%;
+    padding-top: 1%;
     padding-bottom: 0.4%;
     text-align: center;
     color: #fff;
@@ -3969,6 +3970,7 @@ padding: 70px;
 .review-msg-con1 p {
     font-size: 18px;
     color: #132448;
+    margin-top: 0;
 }
 
 .satisfaction-rev-con p {
@@ -4071,10 +4073,10 @@ a.is-truth {
     color: #132448 !important;
 }
 
-.heroCarousel-slide.review-istruth {
+.truthPage-slide.review-istruth {
     background: #fff;
-    width: 100rem !important;
-    margin: 0 18px;
+    width: auto;
+    margin: 0 16px;
     height: 31em;
     border-radius: 35px;
     margin-bottom: 2em;
@@ -4082,5 +4084,96 @@ a.is-truth {
 div#review-truthpage img {
     width: auto;
     height: 1.3em;
-    margin-top: 4px;
+    margin-top: 12px;
+}
+.truth-page-carousel .slick-next, .truth-page-carousel .slick-prev {
+    z-index: 1;
+    border: 1px solid transparent;
+    height: auto;
+    margin-top: auto;
+    padding: 1.625rem;
+    width: auto;
+    background-color: #354669 !important;
+    color: #fff;
+    border: 0;
+    border-radius: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.truth-page-carousel ul.slick-dots {
+    position: absolute;
+    /* padding-top: 6em; */
+    top: auto;
+    left: 0;
+    bottom: 0; 
+}
+
+.track-order-div-pg {
+    background: #fff;
+    width: 35%;
+    margin: 0 auto;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    padding-left: 2.5em;
+}
+
+// MATTRESS CARE SETUP
+.instruction-steps {
+    width: 75%;
+    margin: 0 auto;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.instruction-steps > div {
+    text-align: center;
+    /* width: 25%; */
+    flex: 50%;
+    margin-bottom: 4em;
+}
+.instruction-steps>div>h3{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    color: #174567;	
+    text-transform: uppercase;
+}
+
+.instruction-steps>div>p {
+    color: #444;
+    margin-top: 0;
+    width: 80%;
+        font-size: 16px;
+    margin: 0 auto;
+}
+
+.steps h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 15px 0;
+    font-family: Montserrat,sans-serif!important;
+}
+.steps.s1, .steps.s3 {
+    border-right: 1px solid #dadada;
+}
+
+.steps.s1, .steps.s2 {
+    position: relative;
+}
+
+.steps.s1 hr {
+    width: 95%;
+    margin-top: 2em;
+    position: absolute;
+}
+.steps.s2>hr {
+    width: 95%;
+    margin-left: 2em;
+    margin-top: 2em;
+    position: absolute;
 }
