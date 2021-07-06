@@ -358,8 +358,7 @@ label {
 .logo-footer ul>div {
     margin: 0 8px;
 }
-.icon svg {
-
+.logo-footer .icon svg {
     fill: #fff;
     background: #132448;
     border-radius: 5px;
@@ -971,11 +970,17 @@ i.fas.fa-envelope-open-text.icon {
     font-size: 2.2em;
     color: white;
     text-align: center;
-    top: 37%;
+    top: 73%;
     position: absolute;
-    left: 58%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
+input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn {
+    background: #00b8df;
+    width: 5em;
+    margin-top: 0;
+}
+
 .form {
     margin: 0 1em 1.5rem;
 }
@@ -3609,6 +3614,7 @@ padding: 70px;
     width: 80%;
     margin: 0 auto;
     padding-top: 20px;
+    align-items: center;
 }
 .arrow-content p {
     width: 65%;

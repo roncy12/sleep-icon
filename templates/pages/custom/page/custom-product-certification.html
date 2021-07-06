@@ -60,7 +60,7 @@
 .fixed-bottom-cert {
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: 35px;
     left: 0;
     z-index: 0;
 }
@@ -85,6 +85,53 @@
 	.flexdiv100.sleep-mattress-div.sleep-story.ss-1 {
 		flex-direction: column-reverse !important;
 	}
+	.faqs-abs-content {	
+ 	   bottom: 0%;
+	}
+	.faqs-abs-content p {
+		margin: 0;
+		font-size: 12px;
+		
+	}
+	.banner-description, h1 {
+		margin: 0;
+	}
+	.faqs-abs-content p br{
+		display: none;
+	}
+	.cta-istruth.sleep-stry.mt-5 h2 {
+		font-size: 20px;
+	}
+
+}
+@media only screen and (max-width: 500px){
+.faqs-abs-content {
+    text-align: center;
+    width: 90% !important;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    margin: 0;
+}
+.faqs-abs-content p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1;
+}
+.product-text h2 {
+    color: #132448;
+    font-weight: 700;
+    font-size: 20px;
+}
+.sleep-mattress-text.story-text>h4 {
+    font-size: 20px !important;
+}
+.cta-istruth.sleep-stry.mt-5 h2 {
+    font-size: 18px;
+}
+
 }
 
 </style>
@@ -125,8 +172,9 @@
 </div>
 
 <div class="product-banner-feature">
-	<img src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/mattress-product-cert.png?t=1625537382'}}" />
-	<div class="w-100 fixed-bottom-cert position-absolute">
+	<!-- <img src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/mattress-product-cert.png?t=1625537382'}}" /> -->
+	<img src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/mattress-features-icons.png?t=1625548595'}}">
+	<!-- <div class="w-100 fixed-bottom-cert position-absolute">
 		<div class="matt-ftr-div ">
 			<div class="grn-matt-img">
 				<img src="{{cdn '/assets/img/prodpage/active-charcoal.png'}}" />
@@ -144,7 +192,7 @@
 				 <img src="{{cdn '/assets/img/prodpage/SGS_icon.png'}}" />
 			</div>
 		</div>
-	</div>
+	</div> -->
 </div> 
 
 
@@ -205,9 +253,11 @@
 </div>
 
 <div class="cta-istruth sleep-stry mt-5">
-	<h2 style="color: #fff; text-align: center; font-weight: 700; padding-top:8%; text-transform: inherit;" class="animation-element invi slide-left-long delay-1000 in-view">Get Ready To Be Energized Everyday</h2>
-	<p style="color: #fff; text-align: center; font-size: 18px; margin-bottom: 2em;" class="animation-element invi slide-left-long delay-1000 in-view">Start your 100-night trial!</p>
-	<a href="/reviews/" class="is-truth animation-element invi bounce-in duration-1500 in-view" style="color: #fff; text-align: center;" >Shop Mattresses</a>   
+	<div class="w-75 mx-auto">
+		<h2 style="color: #fff; text-align: center; font-weight: 700; padding-top:8%; text-transform: inherit;" class="animation-element invi slide-left-long delay-1000 in-view">Get Ready To Be Energized Everyday</h2>
+		<p style="color: #fff; text-align: center; font-size: 18px; margin-bottom: 2em;" class="animation-element invi slide-left-long delay-1000 in-view">Start your 100-night trial!</p>
+		<a href="/reviews/" class="is-truth animation-element invi bounce-in duration-1500 in-view" style="color: #fff; text-align: center;" >Shop Mattresses</a>   
+	</div>	
 </div>
 
 </main>

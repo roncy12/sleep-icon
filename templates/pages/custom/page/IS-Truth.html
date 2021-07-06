@@ -1,4 +1,131 @@
 {{#partial "page"}}
+<style>
+    @media only screen and (max-width: 768px){
+
+        .truth-banner-text h4 {
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .arrow-content {
+            align-items: flex-start;
+        }
+        .arrow-content p {
+            width: 100%;
+            color: #132448;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 0 !important;
+            margin-bottom: 1em;
+        }
+        .arr-content-div {
+            margin-top: 5%;
+            position: relative;
+        }
+        .truth-banner-text h2 {
+            margin-top: 0;
+            line-height: 1 !important;
+            font-size: 24px;
+        }
+    }
+    @media only screen and (max-width: 568px){
+        .truth-banner-text h2 {
+            margin-top: 0;
+            line-height: 1 !important;
+            font-size: 18px;
+        }
+        .cta-istruth {
+            height: 310px;
+        }
+        .cta-istruth p {
+            text-align: center;
+            font-size: 16px !important;
+        }
+        .truth-banner-text h4 {
+            font-weight: 600;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        .truth-banner-text p {
+            width: 70%;
+            /* font-size: 18px; */
+            font-size: 14px;
+            margin: 0;
+        }
+        /* .truth-banner-text h2 br {
+            display: none;
+        } */
+        .truth-behind h2 {
+            color: #132448;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        .review-cen-text h2 {
+            color: #132448;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+    @media only screen and (max-width: 500px){
+        .cta-istruth {
+            height: 265px;
+        }
+        .truth-banner-text h4 {
+            font-weight: 600;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        .truth-banner-text p {
+            width: 85%;
+            font-size: 12px;
+            margin: 0;
+            line-height: 1;
+        }
+        .truth-behind h2 {
+            color: #132448;
+            font-size: 16px;
+            font-weight: 800;
+        }
+    }
+    @media only screen and (max-width: 375px){
+        .truth-banner-text h2 {
+            margin-top: 0;
+            line-height: 1 !important;
+            font-size: 14px;
+        }
+        .truth-banner-text h4 {
+            font-weight: 600;
+            font-size: 10px;
+            margin-top: 4px;
+        }
+        .categ-banner > img {
+            width: 100%;
+            position: relative;
+            height: 10em;
+        }
+        .arrow-content p {
+            font-size: 14px;
+        }
+    }
+    @media only screen and (max-width: 292px){
+        .truth-banner-text h2 {
+            margin-top: 0;
+            line-height: 1 !important;
+            font-size: 12px;
+        }
+        .truth-banner-text h4 {
+            font-weight: 600;
+            font-size: 10px;
+            margin-top: 4px;
+            line-height: 1;
+        }
+        .truth-banner-text p {
+            width: 85%;
+            font-size: 12px;
+            margin-top: 6px;
+            line-height: 1;
+        }
+    }
+</style>
 <main class="page cms">
     <div class="categ-banner is-truth-img">
         <img src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/is-the-truth-banner.png?t=1624412595'}}">

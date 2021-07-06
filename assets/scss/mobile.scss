@@ -1335,11 +1335,11 @@ button.accordion-faqs:hover, button.accordion-faqs:focus, .button.accordion-faqs
         flex-direction: column !important;
     }
     .faqs-desc {
-        width: 85%;
+        width: 85% !important;
         margin: 0 auto;
     }
     .faqs-title {
-        width: 50%;    }
+        width: 50% !important;    }
 }
 
 @media only screen and (max-width:500px){
@@ -1563,6 +1563,9 @@ h3.room-type-heading {
     margin-bottom: 5%;
     margin-top: 7%;
 }
+.faqs-title {
+    width: 70% !important;
+}
 }
 
 @media only screen and (max-width: 414px){
@@ -1582,7 +1585,7 @@ h3.room-type-heading {
 }
 .heroCarousel-slide .heroCarousel-image-wrapper {
     max-height: 42.85714rem;
-    margin-top: 14em;
+    // margin-top: 14em;
 }
 .heroCarousel .slick-dots {
     bottom: 1.5rem;

@@ -653,7 +653,16 @@ article div.header-logo-image-container {
     top: 70%;
     width: 80%;
 }
-
+.fixed-bottom-cert {
+    position: fixed;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    z-index: 0;
+}
+.matt-ftr-div {
+    grid-template-columns: repeat(5, 135px) !important;
+}
 }
 
 @media only screen and (max-width: 1080px) {
@@ -1014,4 +1023,9 @@ a.navPages-action {
 a.navPages-action {
     margin: 0;
 }
+.matt-ftr-div {
+    grid-template-columns: repeat(5, 100px) !important;
+    grid-gap: 15px;
+}
+
 }
