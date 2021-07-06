@@ -70,6 +70,12 @@
         height: auto;
         margin-bottom: 12em;
     }
+    .faqs-content {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
 }
 @media only screen and (max-width: 900px) {
 
@@ -1328,6 +1334,12 @@ button.accordion-faqs:hover, button.accordion-faqs:focus, .button.accordion-faqs
     .flexdiv100.sleep-mattress-div {
         flex-direction: column !important;
     }
+    .faqs-desc {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .faqs-title {
+        width: 50%;    }
 }
 
 @media only screen and (max-width:500px){
