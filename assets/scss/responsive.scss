@@ -353,7 +353,9 @@ a.like-us {
     left: 6.5%;
     top: 42em;
 }
-
+.accordion-faqs {
+    width: 60%;
+}
 }
 
 @media only screen and (max-width: 1260px) {
@@ -816,6 +818,18 @@ input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
 .right-side-con.rght a.learn-comp {
     width: 100% !important;
 }
+.accordion-faqs {
+    width: 70%;
+}
+.left-img-con> .product-text {
+    width: 85% !important;
+    margin: 0 auto;
+    padding-right: 0;
+}
+.left-img-con > .product-text p br {
+    display: none;
+}
+
 }
 
 

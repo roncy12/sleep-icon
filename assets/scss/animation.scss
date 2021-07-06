@@ -1,3 +1,296 @@
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.more-stuff-grid {
+  background: #f4f4f4;
+  padding: 4em 0;
+  display: grid;
+  grid-gap: 2em;
+  align-items: center;
+  grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(
+      1em,
+      1fr
+    );
+}
+
+.from-left {
+  grid-column: 2 / 3;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.from-right {
+  grid-column: 3 / 4;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in,
+    -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear,
+.from-bounce.appear{
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  grid-column: 2 / 3;
+  transform: translateX(-50%);
+}
+
+.from-right {
+  grid-column: 3 / 4;
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear,
+.from-slide-up.appear{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.from-slide-up {
+  opacity: 0;
+  transition: all 1s linear;
+  transform: translate3d(0px, 100px, 0px);
+}
+
+
+.slide-down {
+  opacity: 0;
+  transition: all 1000ms linear;
+  transform: translate3d(0px, -100px, 0px);
+}
+
+.slide-down.appear{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.fromslide-right{
+  opacity: 0;
+  transition: all 1000ms linear;
+  transform: translate3d(100px, 0px, 0px);
+}
+
+.fromslide-right.appear{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.left-long {
+  opacity: 0;
+  transition: all 1000ms linear;
+  transform:translateX(-100%);
+}
+
+.left-long.appear{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    animation: 2s slide-left-long 2s forwards;
+}
+
+.left-long1 {
+  opacity: 0;
+  transition: all 1000ms linear;
+  transform:translateX(-100%);
+}
+
+.left-long1.appear{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    animation: 2s slide-left-long 2s forwards;
+}
+.from-left-long {
+  opacity: 0;
+  transition: all 1000ms linear;
+  transform: translate3d(-300px, 0px, 0px);
+transform:translateX(-100%);
+}
+
+.from-left-long.appear{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    animation: 2s slide-left-long 2s forwards;
+    transform:translateX(-100%);
+}
+.left-slide {
+  opacity: 0;
+  transition: all 1000ms linear;
+  transform: translate3d(-300px, 0px, 0px);
+
+}
+
+.left-slide.appear{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    animation: 2s slide-left-long 2s forwards;
+    transform:translateX(0);
+}
+.from-bounce-in{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+    transform: scale(1.1);
+}
+
+.from-bounce-in.appear {
+    opacity: 1;
+    animation-name: bounceIn;
+    animation-duration: 650ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transform: scale(0.89);
+    transform: scale(1) translate3d(0,0,0);
+}
+
+/* DELAYS*/
+
+.delay-1000.appear{
+    transition-delay: 1000ms;
+    animation-delay: 1000ms;
+}
+.delay-1300.appear{
+    transition-delay: 1300ms;
+    animation-delay: 1300ms;
+}
+.delay-1500.appear{
+    transition-delay: 1500ms;
+    animation-delay: 1500ms;
+}
+.delay-1600.appear{
+    transition-delay: 1600ms;
+    animation-delay: 1600ms;
+}
+.delay-1900.appear{
+    transition-delay: 1900ms;
+    animation-delay: 1900ms;
+}
+
+.from-delay-3000.appear{
+
+    transition-delay: 3000ms ;
+    animation-delay: 3000ms;
+}
+.delay-2000{
+    transition-delay: 2000ms;
+    animation-delay: 2000ms;
+}
+.delay-2500.appear{
+    transition-delay: 2500ms;
+    animation-delay: 2500ms;
+
+}
+.delay-3500.appear{
+    transition-delay: 3500ms;
+    animation-delay: 3500ms;
+
+}
+.delay-4000.appear{
+    transition-delay: 4000ms ;
+    animation-delay: 4000ms;
+}
+
+.delay-4500.appear{
+    transition-delay: 4500ms;
+    animation-delay: 4500ms;
+
+}
+.delay-4600.appear{
+    transition-delay: 4600ms;
+    animation-delay: 4600ms;
+
+}
+
+.delay-4700.appear{
+    transition-delay: 4700ms;
+    animation-delay: 4700ms;
+
+}
+
+.delay-5000.appear{
+    transition-delay: 5000ms ;
+    animation-delay: 5000ms;
+}
+.delay-5200.appear{
+    transition-delay: 5200ms ;
+    animation-delay: 5200ms;
+}
+
+// Delays Duration
+
+.duration-500.appear{
+     transition-duration: 500ms ;
+     animation-duration: 500ms;
+}
+.duration-1000.appear{
+     transition-duration: 1000ms ;
+      animation-duration: 1000ms;
+}
+.duration-1500.appear{
+     transition-duration: 1500ms ;
+     animation-duration: 1500ms;
+}
+.duration-2000.appear{
+     transition-duration: 2000ms ;
+     animation-duration: 2000ms;
+}
+.duration-2500.appear{
+     transition-duration: 2500ms ;
+     animation-duration: 2500ms;
+}
+.duration-3000.appear{
+     transition-duration: 3000ms ;
+     animation-duration: 3000ms;
+}
+.duration-3500.appear{
+     transition-duration: 3500ms ;
+     animation-duration: 3500ms;
+}
+.duration-4000.appear{
+     transition-duration: 4000ms ;
+     animation-duration: 4000ms;
+}
+.duration-4500.appear{
+     transition-duration: 4500ms ;
+     animation-duration: 4500ms;
+}
+.duration-5000.appear{
+     transition-duration: 5000ms ;
+     animation-duration: 5000ms;
+}
+
 
 // Invi 
 .animation-element.invi{

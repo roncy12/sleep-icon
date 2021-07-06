@@ -18,125 +18,198 @@
     max-width: 100%;
     background-size: cover;
 }
-/*.top-header1 {
-    padding-top: -1em;
-    display: -ms-flexbox;
-    display: flex;
-    background: #bed7e9;
-    margin: 0 auto;
+.left-img-con> .product-text {
+    width: 100%;
+}
+.left-img-con{
+	width: 100%;	
+}
+.left-img-rev {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-pack: end;
     justify-content: center;
+    place-items: center;
     position: relative;
-    align-items: center;
-    height: 4em;
-}*/
+}
+.product-text h2 {
+    color: #132448;
+    font-weight: 700;
+}
+.product-text p {
+    color: #132448;
+}
+.matt-ftr-div {
+    max-width: 85%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 167px);
+    justify-content: center;
+    place-items: center;
+    place-content: center;
+}
+
+.product-banner-feature img {
+    position: relative;
+    width: 100%;
+}
+.product-banner-feature {
+    position: relative;
+}
+
+.fixed-bottom-cert {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+.flexdiv100.sleep-mattress-div {
+    background: transparent;
+    width: 100%;
+    margin-inline: auto;
+    height: auto;
+    position: relative;
+    top: 7em;
+    margin-bottom: 5em;
+}
+.sleep-mattress-text {
+    margin: 0 auto;
+    margin-left: auto;
+}
+.flexdiv100.sleep-mattress-div.sleep-story.ss-1 {
+    height: auto;
+    margin-bottom: 10em;
+}
+@media only screen and (max-width: 568px){
+	.flexdiv100.sleep-mattress-div.sleep-story.ss-1 {
+		flex-direction: column-reverse !important;
+	}
+}
+
 </style>
 <main class="page cms">
- <!-- sticky -->
-<!-- <div class="top-header1">
-        <div>
-            <label class="coupon-text">Valentine's Sale &nbsp|&nbsp 60% off on all mattresses 
-            </label>
-        </div>
-        <div>
-            <span class="coupon-textcode">&nbsp &nbsp|&nbsp &nbsp </span>
-        </div>
-        <div>
-             <span class="coupon-textcode1">Use Code:Love60 </span>
-        </div>
-</div> -->
-
-<div class="product-cert-banner" style="position: relative;"><img src="https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/certification-banner.png" alt="">
+<div class="product-cert-banner" style="position: relative;">
+	<img src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/product-certification-banner.png?t=1625535132'}}" alt="">
 		<div class="faqs-abs-content">
-		<h1>Product Certifications</h1>
-		<p>Icon Sleep products come with the industry's most respected seals.</p>
+		<h1 class="text-capitalize">Certifications & Features</h1>
+		<p style="text-transform: initial;">Icon Sleep offers mattresses that are packed with certifications and features that make sleep more comfortable. <br>
+			Major global independent textile testing and research organizations back our products’ quality and safety</p>
 		</div>
 
 </div>
 
-<div class="certfication-content"><img src="https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/certipur-logo.png" alt="">
-<h2>CertiPUR-US®</h2>
-<p>CertiPUR-US® is a certifying body administered by a nonprofit organization that certifies mattresses, home furnishings, upholstered furniture, crib mattresses, and accessory comfort products. <br><br> For mattresses, foams carrying the CertiPUR-US® seal has been carefully examined and scientifically tested to ensure it passes the program's strict guidelines and standards. During the evaluation, the contents of the foam are tested, along with other components. This program is the most comprehensive and widely recognized certification process for polyurethane foam.</p>
-</div>
-
-<div class="certipur-us-content">
-	<div>
-		<img src="https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/certipur-foam.png" alt="">
-	</div>
-<div>
-	<img src="https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/certipur-list-bg.png" alt="">
-	<div class="certipur-inside">
-		<h4>In a nutshell, CertiPUR-US® certified foams are:</h4>
-		<ul class="certpur-list">
-			<li>
-				<p>Made without ozone depleters</p>
-			</li>
-			<li>
-				<p>Made without PBDEs, TDCPP or TCEP ("Tris") flame retardants</p>
-			</li>
-			<li>
-				<p>Made without mercury, lead, and other heavy metals</p>
-			</li>
-			<li>
-				<p>Made without formaldehyde</p>
-			</li>
-			<li>
-				<p>Made without phthalates regulated by the Consumer Product Safety Commission</p>
-			</li>
-		</ul>
-	</div>
-</div>
-</div>
-
-<div class="certfication-standard">
-	<img src="https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/oeko-tex-logo.png" alt="">
-	<h2>STANDARD 100 by OEKO-TEX®</h2>
-	<p>It's one of the worlds most recognized labels for textiles tested for harmful substances. If a textile carries OEKO-TEX's STANDARD 100 seal, you can be certain that every component of this article from the threads used to the buttons and other accessories has been tested for harmful substances and that the textile is guaranteed harmless in human ecological terms. <br><br> All tests are governed by OEKO-TEX's criteria catalog that is updated at least once a year to accommodate new scientific knowledge about textiles and to meet statutory requirements.</p>
-</div>
-
-<div class="certification-badge">
-	<img src="https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/certification-seal.png" alt="">
-	<p>All Icon Sleep mattresses carry these seals of quality that reflect consumer confidence and trust rating. <br><br> <span>Because an icon like you deserves only the best. </span></p>
-</div>
-
-<!-- <div class="certification-banner">
-
-<div class="about-content">
-	<h2>Try one of our mattresses for 100 nights!</h2>
-	<div class="bottom-flex">
-		<div class="box">
-			<img class="img" src="https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/about-luxe.png" alt=""> 
-			<a href="https://icon-sleep.com/luxe-gel-memory-foam-mattress/">View Mattress</a>
+<div class="left-right-rev">
+	<div class="ques-rev-con">
+		<div class="left-img-rev">
+			<div class="left-img-con">
+				<div class="product-text">
+					<h2>CertiPUR-US®</h2>
+					<p>Icon Sleep has met the strict standards set by the alliance fir Flexible <br> Polyurethane Foam on the content, emissions and durability of foams.<br> The seal means that our products are safe from environment, health<br> and fire hazards associated with foams</p>
+					<h2>OEKO-TEX® Standard 100</h2>
+					<p>All Icon Sleep products complies with Oeko-Tex Standard 100 <br> Certification. The seal ensures that the fabrics and materials we use<br> have no harmful substances Oeko-Tex is an intertionally renowned<br> textile testing and research body based in Europe.</p>
+				</div>				 
+			 </div>
 		</div>
-		<div class="box">
-			<img class="img" src="https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/about-cool.png" alt="">
-			 <a href="https://icon-sleep.com/cool-gel-memory-foam-mattress/">View Mattress</a>
-		</div>
-	</div>
-</div>
-</div> -->
-<div class="certification-bottom">
-    
-	<div class="about-content cert-con">
-        <div class="b-content">
-	<h2>TRY ONE OF OUR MATTRESSES FOR 100 NIGHTS!</h2>
-	<div class="bottom-flex">
-		<div class="box">
-			<img class="img" src="https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/about-luxe.png" alt=""> 
-			<a href="/luxe-gel-memory-foam-mattress/">View Mattress</a>
-		</div>
-		<div class="box">
-			<img class="img" src="https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/about-cool.png" alt="">
-			 <a href="/cool-gel-memory-foam-mattress/">View Mattress</a>
-		</div>
-		<div class="box">
-			<img src="https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/alpha-mattress-img.png?t=1601625613&amp;_ga=2.235780225.107696235.1601252207-2022119561.1571639426" alt="">
-			<a href="https://icon-sleep.com/alpha-gel-memory-foam-mattress/">View Mattress</a>
+		<div class="right-img-rev">
+			<img class="animation-element slide-right in-view" src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/certipur-logo-prod-1-.png?t=1625538841'}}" />
+			<!-- <div class="w-100 fixed-bottom-cert position-absolute">
+				
+				<img src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/certipur-logo1.png?t=1625537885'}}" />
+				<img src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/oeko-tex-logo-prod-cert.png?t=1625538282'}}" />
+				
+
+			</div> -->
 		</div>
 	</div>
 </div>
 
-    </div>
+<div class="product-banner-feature">
+	<img src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/mattress-product-cert.png?t=1625537382'}}" />
+	<div class="w-100 fixed-bottom-cert position-absolute">
+		<div class="matt-ftr-div ">
+			<div class="grn-matt-img">
+				<img src="{{cdn '/assets/img/prodpage/active-charcoal.png'}}" />
+			</div>
+			<div class="grn-matt-img">
+				<img src="{{cdn '/assets/img/prodpage/Compression-tech_icon.png'}}" />
+			</div>
+			<div class="grn-matt-img">
+				<img src="{{cdn '/assets/img/prodpage/Bio-Foam_icon.png'}}" />
+			</div>
+			 <div class="grn-matt-img">
+				 <img src="{{cdn '/assets/img/prodpage/Evergreen_icon.png'}}" />
+			</div>
+			 <div class="grn-matt-img">
+				 <img src="{{cdn '/assets/img/prodpage/SGS_icon.png'}}" />
+			</div>
+		</div>
 	</div>
+</div> 
+
+
+<div class="flexdiv100 sleep-mattress-div sleep-story">
+	<div class="sleepm-div our-story-div">     
+			<img class="sleep-mattress-left animation-element slide-left in-view" src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/charcoal-image-prod-cert.png?t=1625539748'}}" />             
+	</div>
+	<div class="">
+		<div class="sleep-mattress-text story-text">
+		   <h4 class="animation-element invi slide-left-long delay-1000 in-view text-capitalize"><span style="color: #aaaaaa;">Feature #1 <br></span>Activated Charcoal<br></h4>
+		   <p class="animation-element invi slide-left-long delay-1300 in-view">The bedding industry has been using activated charcoal for many years to absorb the dangerous and harmful odors and help eliminate mod and mildew. Icon Sleep uses activated charcoal from coconut trees.</p>
+		</div>
+	</div>
+</div>
+
+<div class="flexdiv100 sleep-mattress-div sleep-story ss-1">
+	<div class="sleepm-div">     
+		<div class="sleep-mattress-text story-text">
+			<h4 class="animation-element invi slide-left-long delay-1000 in-view text-capitalize"><span style="color: #aaaaaa;">Feature #2 <br></span>Breathable White Quilted
+				<br>Poly Jacquard Fabric<br></h4>
+			<p class="animation-element invi slide-left-long delay-1300 in-view">the breathable white poly jacquard fabric makes our mattress, pillows, and other sleep products always look clean and fresh.</p>		 </div>             
+	</div>
+	<div class="sleepm-div our-story-div"">
+		<img class="sleep-mattress-left animation-element slide-right in-view" src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/quilt-image.png?t=1625540209'}}" /> 
+	</div>
+</div>
+
+<div class="product-cert-banner" style="position: relative;">
+	<img src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/product-certification-banner.png?t=1625535132'}}" alt="">
+		<div class="faqs-abs-content">
+			<h4 class="text-light text-center mb-0">FEATURE #3</h4>
+		<h2 class="text-capitalize text-light mt-1">Improve Blood Circulation</h2>
+		<p style="text-transform: initial;">We use foams designs to ease the body’s pressure points, eliminate <br> discomfort, and promote healthy blood circulation.</p>
+		</div>
+</div>
+
+<div class="flexdiv100 sleep-mattress-div sleep-story">
+	<div class="sleepm-div our-story-div">     
+			<img class="sleep-mattress-left animation-element slide-left in-view" src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/feature-img-4.png?t=1625541005'}}" />             
+	</div>
+	<div class="">
+		<div class="sleep-mattress-text story-text">
+		   <h4 class="animation-element invi slide-left-long delay-1000 in-view text-capitalize"><span style="color: #aaaaaa;">Feature #4 <br></span>Open Cell Memory Foam<br></h4>
+		   <p class="animation-element invi slide-left-long delay-1300 in-view">our open cell foams spread air pressure all over the foam, allowing them to return their previous shape after pressure is appliad to it. It also gives way for more airflow through the material keeping foam cool and fresh.</p>
+		</div>
+	</div>
+</div>
+
+<div class="flexdiv100 sleep-mattress-div sleep-story ss-1">
+	<div class="sleepm-div">     
+		<div class="sleep-mattress-text story-text">
+			<h4 class="animation-element invi slide-left-long delay-1000 in-view text-capitalize"><span style="color: #aaaaaa;">Feature #5 <br></span>Reduces Motion Transfer<br></h4>
+			<p class="animation-element invi slide-left-long delay-1300 in-view">Our memory foam mattresses lessen bounce and absorb movement. this feature avoids disturbing your sleeping partner.</p>		 </div>             
+	</div>
+	<div class="sleepm-div our-story-div">
+		<img class="sleep-mattress-left animation-element slide-right in-view" src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/feature-img-5.png?t=1625541000'}}" /> 
+	</div>
+</div>
+
+<div class="cta-istruth sleep-stry mt-5">
+	<h2 style="color: #fff; text-align: center; font-weight: 700; padding-top:8%; text-transform: inherit;" class="animation-element invi slide-left-long delay-1000 in-view">Get Ready To Be Energized Everyday</h2>
+	<p style="color: #fff; text-align: center; font-size: 18px; margin-bottom: 2em;" class="animation-element invi slide-left-long delay-1000 in-view">Start your 100-night trial!</p>
+	<a href="/reviews/" class="is-truth animation-element invi bounce-in duration-1500 in-view" style="color: #fff; text-align: center;" >Shop Mattresses</a>   
+</div>
+
 </main>
 {{/partial}}
 {{> layout/base}}
