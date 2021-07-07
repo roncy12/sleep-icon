@@ -1,5 +1,43 @@
 {{#partial "page"}}
 <style>
+    @media only screen and (max-width: 768px){
+        .sleep-mattress-text {
+            width: 95%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            color: #132448;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    @media only screen and (max-width: 736px){
+        .mattress-left-img img {
+            left: 2%;
+        }
+        .sleep-mattress-text {
+           padding-top: 0;
+        }
+}    
+@media only screen and (max-width: 667px){
+    .sleep-mattress-text {
+        width: 90%;
+        padding-top: 0;
+        padding-bottom: 10%;
+        color: #132448;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+@media only screen and (max-width: 637px){
+        .sleep-mattress-text h4 {
+            color: #132448;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .mattress-left-img img {
+            left: 0;
+        }
+}
     @media only screen and (max-width: 568px){
         .happy-div {
             max-width: 80%;
@@ -22,9 +60,31 @@
         }
     }
     @media only screen and (max-width: 500px){
+        .sleep-mattress-text h4 {
+            color: #132448;
+            font-size: 16px;
+            font-weight: 800;
+        }
+        .sleep-mattress-text > p {
+            font-size: 16px;
+            font-weight: 600;
+        }        
         .cta-istruth {
             height: 265px;
         }
+    }
+
+    @media only screen and (max-width: 735px){
+        .sleep-mattress-text h4 {
+            color: #132448;
+            font-size: 14px;
+            font-weight: 800;
+        }
+        .sleep-mattress-text > p {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
     }
 </style>
 <main class="page cms">

@@ -5,12 +5,257 @@
             position: relative;
             margin-top: 8em;
         }   
+        .banner-comparison.container {
+            margin-top: 0;
+        }
+        /* .arrow-content-section h4 {
+            margin-top: 0;
+        } */
+        .arr-content-div {
+            top: 0;
+            position: relative;
+            color: #132448;
+            font-size: 18px;
+            
+        }
+        .dog-md-content {
+            max-width: 90%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .dog-md-content img {
+            width: 100%;
+            position: relative;
+        }
+        .md-content-text {
+            position: absolute;
+            left: 50%;
+            bottom: 5%;
+            /* transform: translate(-50%, -50%); */
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+        }
+        .fixed-bottom-text {
+            position: absolute;
+            right: 0;
+            bottom: -90px;
+            left: 10%;
+            z-index: 0;
+            width: 80%;
+            background: #132448;
+            padding: 58px;
+        }
+        
+        .left-img-con> .product-text {
+            width: 80%;
+            margin-right: 0;
+            margin-left: auto;
+        }
+        .left-img-con{
+            width: 100%;	
+        }
+        .left-img-rev {
+            display: -ms-grid;
+            display: grid;
+            -ms-flex-pack: end;
+            justify-content: center;
+            place-items: center;
+            position: relative;
+        }
+        .product-text h2 {
+            color: #132448;
+            font-weight: 700;
+        }
+        .product-text p {
+            color: #132448;
+            font-size: 18px;
+        }
+        @media only screen and (max-width: 1750px) {
+                .md-content-text br {
+                    display: none;
+                }
+            }
+
+        @media only screen and (max-width: 1260px){
+            .fixed-bottom-text {
+                position: absolute;
+                right: 0;
+                bottom: -90px;
+                left: 10%;
+                z-index: 0;
+                width: 80%;
+                background: #132448;
+                padding: 25px;
+            }
+        }
+
+        @media only screen and (max-width: 992px){
+            .fixed-bottom-text {
+                padding: 10px;
+            }
+            .product-text h2 {
+                color: #132448;
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 812px){
+            .fixed-bottom-text {
+                left: 0%;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        @media only screen and (max-width: 736px){
+            .fixed-bottom-text {
+                left: 0%;
+                width: 90%;
+                margin: 0 auto;
+                font-size: 16px;
+            }
+            .product-text h2 {
+                color: #132448;
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+        @media only screen and (max-width: 667px){
+            .fixed-bottom-text {
+                left: 0%;
+                width: 90%;
+                margin: 0 auto;
+                font-size: 16px;
+                line-height: 1.2;
+                padding: 24px;
+            }
+        }
+        @media only screen and (max-width: 568px) {
+            .masthead {
+                position: relative;
+                margin-top: 4%;
+            }
+            .chart-desc h2 {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+            .chart-desc p {
+                margin-top: 4px;
+                font-size: 14px !important;
+            }
+            .arrow-content-section h4 {
+                font-size: 18px !important;
+            }
+            .arrow-content p {
+                width: 100%;
+                font-size: 16px;
+            }
+            .arrow-content>img {
+                margin-right: 1em;
+                margin-left: auto;
+            }
+            .fixed-bottom-text {
+                left: 0%;
+                width: 90%;
+                margin: 0 auto;
+                font-size: 16px;
+                line-height: 1.2;
+                padding: 15px;
+            }
+            .left-img-con> .product-text {
+                margin: 0 auto;
+            }
+            .product-text p {
+                color: #132448;
+                font-size: 16px;
+            }
+            .cta-istruth {
+                    height: 310px;
+                }
+                .cta-istruth p {
+                    text-align: center;
+                    font-size: 16px !important;
+                }
+                .mattress-left-img img {
+                    left: 0;
+                }
+        }
+
+        @media only screen and (max-width: 500px){
+            .chart-desc h2 {
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+            .chart-desc p {
+                margin-top: 4px;
+                font-size: 12px !important;
+            }
+            .arrow-content-section h4 br {
+                display: none;
+            }
+            .fixed-bottom-text {
+                left: 0%;
+                width: 90%;
+                margin: 0 auto;
+                font-size: 14px;
+                line-height: 1.2;
+                padding: 5px;
+            }
+            .cta-istruth {
+                height: 265px;
+            }
+        }
+         
+        @media only screen and (max-width: 375px){
+            .chart-desc h2 {
+                font-size: 12px;
+                margin-bottom: 0;
+            }
+            .chart-desc {
+                margin: 0;
+                padding: 0;
+            }
+            .chart-desc p {
+                margin-top: 4px;
+                font-size: 10px !important;
+            }
+            .masthead img {
+                height: 8em !important;
+            }
+            .fixed-bottom-text {
+                left: 0%;
+                width: 95%;
+                margin: 0 auto;
+                font-size: 12px;
+                line-height: 1;
+                padding: 5px;
+                bottom: -50px;
+            }
+        }
+
+        @media only screen and (max-width: 312px){
+            .chart-desc h2 {
+                font-size: 10px;
+                margin-bottom: 0;
+            }
+            .fixed-bottom-text {
+                left: 0%;
+                width: 95%;
+                margin: 0 auto;
+                font-size: 12px;
+                line-height: 1;
+                padding: 5px;
+                bottom: -75px;
+            }
+        }
     </style>
     <div class="masthead">
         <img class="position-relative w-100 h-100" src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/fake-reviews-banner.png?t=1625559679'}}"/>
         <div class="banner-comparison chart-page container h-100">
         <div class="row h-100 align-items-center">
-            <div class="col-12 text-left chart-desc" style="left: 14%;">
+            <div class="col-12 text-center chart-desc">
             <h2 class="font-weight-light font-weight-bold text-light text-capitalize">The Truth Behind Third Party Mattress Reviews</h2>
             <p class="text-light" style="font-size: 18px;">How popular mattress brands sell you sleep.</p>
             </div>
@@ -18,12 +263,12 @@
         </div>
     </div>
 
-    <div class="flexdiv100">
+    <div class="flexdiv100" style="margin-top: 5em;">
         <div class="left-img-section">
             <img class="animation-element slide-left in-view" src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/third-party-mattress-photo.png?t=1625560234'}}" />  
         </div>
         <div class="arrow-content-section">
-            <h4>Third Party Mattress Review Sites<br>
+            <h4 class="mx-auto" style="max-width: 80%; font-size: 20px; font-weight: 600; color: #132448;">Third Party Mattress Review Sites<br>
                 Like Sleepopolis, Memory Foam Talk, etc.</h4>
             <div class="arr-content-div">
                 <div class="arrow-content slide-in left-long delay-1000 in-view">
@@ -43,36 +288,41 @@
             </div>
         </div>
     </div>
+    <div class="dog-md-content position-relative"  style="margin-top: 5em;  margin-bottom: 5em;">
+        <img src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/dog-reviewer-image.png?t=1625621832'}}" />
+        <div class="md-content-text fixed-bottom-text">
+            With the competition to sell you a mattress review blogs for their products to rank and<br> have good publicity. Little do consumers know that the mattress review sites they<br> thought they could trust earn huge shares and commissions when posting good reviews<br> and referrals for online matress brands.
+
+        </div>
+    </div>
+
+    <div class="left-right-rev" style="margin-top: 8em;" >
+        <div class="ques-rev-con">
+            <div class="left-img-rev">
+                <div class="left-img-con">
+                    <div class="product-text">
+                        <h2>So, How do we get our reviews?</h2>
+                        <p>At Icon Sleep, we don’t pay bloggers one popular mattress review sites to sell now rank in search engines. We let our consumers speak for the<br> quality of our mattress.
+                        </p>
+                        <p class="mb-0">POWERED BY:</p>
+                        <img src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/stamped-fake-reviews.png?t=1625623034'}}">
+                    </div>				 
+                 </div>
+            </div>
+            <div class="right-img-rev">
+                <img class="animation-element slide-right in-view" src="https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/stamped-reviews-image.png?t=1625560791">
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-istruth sleep-stry mt-5">
+        <div class="w-75 mx-auto">
+            <h2 style="color: #fff; text-align: center; font-weight: 700; padding-top:8%; text-transform: inherit;" class="animation-element invi slide-left-long delay-1000 in-view">See Why People Think We’re Iconic</h2>
+            <p style="color: #fff; text-align: center; font-size: 18px; margin-bottom: 2em;" class="animation-element invi slide-left-long delay-1000 in-view">Please read over some of our 1,000+ real customer reviews</p>
+            <a href="/reviews/" class="is-truth animation-element invi bounce-in duration-1500 in-view" style="color: #fff; text-align: center;" >View All Reviews</a>   
+        </div>	
+    </div>
 </main>
 
 {{/partial}}
 {{> layout/base}}
-
-<!-- https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/third-party-mattress-photo.png?t=1625560234
-
-https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/write-icon.png?t=1625560439
-https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/job-icon.png?t=1625560440
-https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/dollar-sign-icon.png?t=1625560441
-
-
-https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/dog-mid-content.png?t=1625560789
-https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/stamped-reviews-image.png?t=1625560791
-
-
-Third Party Mattress Review Sites
-Like Sleepopolis, Memory Foam Talk, etc.
-
-
-Are heavily incentivized to write positive and favorable reviews.
-
-Have secret business deals with the brands they’re reviewing.
-
-Get paid for every mattress sold through affiliate links on their blog.
-
-With the competition to sell you a mattress review blogs for their products to rank and have good publicity. Little do consumers know that the mattress review sites they thought they could trust earn huge shares and commissions when posting good reviews and referrals for online matress brands.
-
-So, How do we get our reviews?
-At Icon Sleep, we don’t pay bloggers one popular mattress review sites to sell now rank in search engines. We let our consumers speak for the quality of our mattress.
-
-See Why People Think We’re Iconic
-Please read over some of our 1,000+ real customer reviews -->
