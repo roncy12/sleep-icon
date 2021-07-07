@@ -1,0 +1,31 @@
+---
+product:
+    videos:
+        limit: {{theme_settings.productpage_videos_count}}
+    reviews:
+        limit: {{theme_settings.productpage_reviews_count}}
+    related_products:
+        limit: {{theme_settings.productpage_related_products_count}}
+    similar_by_views:
+        limit: {{theme_settings.productpage_similar_by_views_count}}
+---
+{{inject "enableSwatches" theme_settings.show_swatches_on_grid}}
+{{inject "enableSizes" theme_settings.show_sizes_on_grid}}
+{{inject "enableImageHoverSwitcher" theme_settings.enable_image_hover_switcher}}
+{{inject "enableSelectedOptionLabel" theme_settings.show_selected_option_on_label}}
+{{inject "addToCartMode" theme_settings.add_to_cart_mode}}
+{{#partial "page"}}
+    
+
+    <div itemscope itemtype="http://schema.org/Product">
+        {{> components/products/custom-green-mattress settings=../settings schema=true}}
+
+        {{#if product.videos.list.length}}
+            {{> components/products/videos product.videos}}
+        {{/if}}
+
+
+    </div>
+
+{{/partial}}
+{{> layout/base}}

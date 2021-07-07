@@ -1,7 +1,8 @@
 {
   "customLayouts": {
     "product": {
-      "alternate-product.html":"/test-url/"
+      "alternate-product.html":"/test-url/",
+      "product-new-mattress.html": "/8-in-green-tea-firm-memory-foam-bed-mattress/"
     },
     "brand": {
       "custom-brand.html": "/brands/custombrand/"

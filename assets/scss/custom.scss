@@ -3896,3 +3896,11 @@ div#review-truthpage img {
 .right-img-rev>img {
     position: relative;
 }
+html, body{
+    font-family: 'Open Sans' !important;
+    font-size: 1em;
+}
+.navUser-item--cart .dropdown-menu.is-open {
+    right: 0;
+    width: 25rem;
+}
