@@ -9,23 +9,28 @@ product:
     similar_by_views:
         limit: {{theme_settings.productpage_similar_by_views_count}}
 ---
-{{inject "enableSwatches" theme_settings.show_swatches_on_grid}}
-{{inject "enableSizes" theme_settings.show_sizes_on_grid}}
-{{inject "enableImageHoverSwitcher" theme_settings.enable_image_hover_switcher}}
-{{inject "enableSelectedOptionLabel" theme_settings.show_selected_option_on_label}}
-{{inject "addToCartMode" theme_settings.add_to_cart_mode}}
+{{inject 'productId' product.id}}
+
 {{#partial "page"}}
-    
+
+    {{#each product.shipping_messages}}
+        {{> components/common/alert/alert-info message}}
+    {{/each}}
 
     <div itemscope itemtype="http://schema.org/Product">
         {{> components/products/custom-green-mattress settings=../settings schema=true}}
 
+        <!-- {{{region name="product_below_content"}}} -->
+
         {{#if product.videos.list.length}}
             {{> components/products/videos product.videos}}
         {{/if}}
+<!-- 
+        {{#all settings.show_product_reviews theme_settings.show_product_reviews (if theme_settings.show_product_details_tabs '!==' true)}}
+            {{> components/products/reviews reviews=product.reviews product=product urls=urls}}
+        {{/all}}
 
-
+        {{> components/products/tabs}} -->
     </div>
-
 {{/partial}}
 {{> layout/base}}

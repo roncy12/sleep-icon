@@ -56,37 +56,50 @@
     }
     .productView.grn-matt-page span#stamped-badge-title {
         font-size: 18px !important;
+        color: #888;
     }
     .productView.grn-matt-page span#stamped-badge-total {
-        font-size: 18px !important;
-    }
-    // GREEN MATTRESS FOAM
-section.productView-details.green-matt-details {
+    font-size: 18px !important;
+    color: #888;
+}
+ /* GREEN MATTRESS FOAM */
+ .form {
+    margin: 0;
+}
+
+ section.productView-details.green-matt-details {
     display: -ms-grid;
     display: grid;
     width: 40% !important;
     height: auto;
     position: absolute;
     right: 0;
-    top: 0;
-    left: 60%;
+    top: 4%;
+    left: 58%;
     background: #fff;
+}
+.productView-title {
+    font-size: 28px;
+    color: #173456;
+    max-width: 75%;
 }
 .productView-product.green-matt-prod {
     display: grid !important;
     width: 100% !important;
-    // justify-items: center;
 }
 .productView-description.green-matt-desc {
-    width: 100%;
+    width: 85%;
     margin-bottom: 0;
     margin: 0;
     padding: 0;
+    text-align: left;
+    color: #173456;
 }
-
 .grn-matt-price .productView-price {
     margin: 0;
-
+    color: #173456;
+    font-weight: 700;
+    font-size: 28px;
 }
 .grn-matt-price h4 {
     width: auto;
@@ -116,18 +129,18 @@ form.grn-matt-form div.u-hiddenVisually {
     position: absolute !important;
     width: auto !important;
 }
-
 .grn-matt-form .form-select {
     padding: 5px 7px;
     font-size: 16px;
     height: 4em;
     max-width: 100rem;
     width: 100%;
+    background-position: right 0.5rem top 1.5rem;
 }
 .grn-matt-form .cus-options {
     display: inline-block;
     width: 100%;
-    margin: 0 1%;
+    margin: 20px 1% 0 0%;
     vertical-align: top;
 }
 .grn-matt-form .cus-options > div {
@@ -142,10 +155,14 @@ form.grn-matt-form div.u-hiddenVisually {
     justify-content: space-around;
     width: 115%;
     border: 1px solid gray;
+    align-items: center;
 }
 
 .grn-matt-form .form-input--incrementTotal {
-    border-color: #fff !important;
+    border-color: transparent !important;
+    background: transparent;
+    position: relative;
+    margin: 0;
 }
 .grn-matt-form .form-field.form-field--increments {
     display: inline-block;
@@ -163,7 +180,7 @@ form.grn-matt-form div.u-hiddenVisually {
     -ms-flex-pack: justify;
     justify-content: space-between;
     text-align: center;
-    margin-top: 1em;
+    margin-top: 18px;
 }
 .prodview-shipping-details.grn-matt-ship div p {
     color: #132448;
@@ -177,50 +194,30 @@ form.grn-matt-form div.u-hiddenVisually {
     font-size: 16px;
 }
 
-.productView-img-container.green-matt-prodcon img {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    max-height: 50em;
-    width: 60%;
-}
 .flexgrn-matt {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     padding: 15px 0;
     width: 100%;
 }
-.productView-thumbs.green-matt-thumb {
-    float: none;
-    position: relative;
-    left: 7%;
-    top: 101%;
-    transform: translatey(-50%);
-    margin: 0;
-    display: -ms-flexbox;
-    display: flex;
-}
+
 .prodview-shipping.grn-mat-shp {
-    width: 40%;
+    width: 100%;
     padding: 0;
     display: block;
     background: #fff;
-    top: 11.5em;
+    top: 0;
     position: relative;
     margin-inline: initial;
-    left: 11em;
+    left: 0;
 }
 .d-grid{
     display: grid;
 }
 
 .grid-ship-details {
-
     display: grid;
-    grid-template-columns: repeat(4, 186px);
+    grid-template-columns: repeat(4, 250px);
     place-items: center;
     place-content: center;
 }
@@ -274,6 +271,7 @@ label.terms-showMore i {
     grid-template-columns: repeat(3, 1fr);
     max-width: 75%;
     margin: 0 auto;
+    grid-gap: 20px;
 }
 .prodview-sizechart-img.green-mattress-chart {
     width: 80%;
@@ -289,7 +287,7 @@ label.terms-showMore i {
 .prodview-sizechart.green-matt {
     background: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/is-parallax-pattern.png?t=1623642972&_ga=2.224919322.1496872644.1623634006-1835193253.1617777202);
     background-repeat: no-repeat;
-    height: 650px;
+    height: auto;
     width: 100%;
     background-size: cover;
     position: relative;
@@ -297,13 +295,16 @@ label.terms-showMore i {
     background-attachment: fixed;
     transform-style: preserve-3d;
     perspective: 1px;
+    padding: 50px;
 }
 .prodview-anatomy.green-anatomy{
     display: flex;
 }
 .prodview-anatomy div ul {
     list-style-image: url(../img/prodpage/anatomy-list.png);
-} 
+    color: #173456;
+    font-size: 18px;
+}
 .sub-prodview-podimg.green-matt-sub {
     width: 90%;
     padding: 50px 0;
@@ -316,7 +317,467 @@ label.terms-showMore i {
     margin: 0 1.5%;
     display: inline-block;
 }
+input:checked + .terms-showMore #close {
+    display: inline-block;
+    height: 3px;
+    margin-top: 6px;
+    width: 14px;
+}
+input+.terms-showMore+* {
+    font-size: 15px;
+    padding-left: 15px;
+    text-align: left;
+    color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s,overflow .5s;
+    border-bottom: 1px solid #fff;
+}
+.product-review-section.greenh2>h2 {
+    color: #174567;
+    font-weight: 700;
+    text-transform: inherit;
+}
+#stamped-reviews-widget[data-widget-type=carousel] .stamped-carousel-title {
+    color: #174567;
+}
+.prodview-advantage-con>div img {
+    position: relative;
+    width: 100%;
+}
+.prodview-advantage-con>div h4 {
+    color: #174567;
+    font-weight: 700;
+    text-transform: inherit;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 1em;
+}
+.prodview-advantage-con p {
+    font-size: 16px;
+    color: #174567;
+    width: 85%;
+}
+.prodview-advantage.green-mattress-ques h3 {
+    color: #174567;
+    font-weight: 700;
+    text-transform: inherit;
+    font-size: 24px;
+}
+.prodview-advantage.green-mattress-ques p {
+    color: #174567;
+    margin-top: 0px;
+    margin-bottom: 4em;
+}
+.prodview-sizechart.green-matt h3 {
+    font-size: 28px;
+}
+.prodview-sizechart.green-matt p {
+    font-size: 18px;
+}
+.green-matt-features {
+    background: #e2e8ed;
+    height: 450px;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+    margin-top: 0em;
+}
+.matt-ftr-div {
+    max-width: 85%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(5,167px);
+    justify-content: center;
+    place-content: center;
+}
+.grn-ftr-text {
+    text-align: center;
+    max-width: 70%;
+    margin-inline: auto;
+}
+.grn-ftr-text p {
+    color: #888;
+}
+.productView .slick-dots {
+    position: relative;
+    display: none !important;
+}
+ul.productView-thumbs.green-matt-thumb {
+    width: 75%;
+}
+.productView-images {
+    width: 55%;
+}
+.productView-img-container {
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    height: 38rem;
+}
+.productView.grn-matt-page {
+    position: relative;
+    margin-top: 4em;
+}
+.productView-thumbnails img {
+    width: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: contain;';
+    position: relative;
+}
+.productView-thumbnail-link {
+    border: 1px solid #e5e5e5;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 125px;
+    max-width: 100%;
+    padding: 0;
+    position: relative;
+    width: 85%;
+    box-sizing: unset;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.slick-list {
+    margin-bottom: 2em;
+}
+.productView-img-container img {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: contain;';
+}
+div#add-to-cart-wrapper {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-increment .button {
+    margin: 0;
+    padding: 0 25px;
+    border: none;
+}
+.productView-options .form-action {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+.productView-options .form-action .button {
+    margin: 0;
+    width: 100%;
+    background: #173456;
+    color: #fff;
+    border-color: transparent !important;
+    background-image: url('https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/add-to-cart-img.png?t=1625732593');
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: grid;
+    background-position: left 2rem center;
+}
+div#add-to-cart-wrapper>div {
+    width: 50%;
+}
+@media only screen and (max-width: 1920px) {
+    .productView-img-container img {
+         margin: 0;
+    }
+    .grid-ship-details {
+        display: grid;
+        grid-template-columns: repeat(4, 185px);
+        place-items: center;
+        place-content: center;
+    }
+    .productView.grn-matt-page {
+        position: relative;
+        margin-top: 6em;
+        margin-bottom: 3em;
+    }
+}
+@media only screen and (max-width: 1825px) {
+    .prodview-advantage-con>div h4 {
+        font-size: 20px;
+    }
+    .productView-img-container {
+        height: 35rem;
+    }
+}
+@media only screen and (max-width: 1725px){
+    .productView-img-container {
+        height: 33rem;
+    }
+}
+@media only screen and (max-width: 1609px){
+    .productView.grn-matt-page {
+        position: relative;
+        margin-top: 6em;
+        margin-bottom: 7em;
+    }
+}
+@media only screen and (max-width: 1425px){
+    .productView-img-container {
+        height: 29rem;
+    }
+}
+@media only screen and (max-width: 1350px){
+    .faqs-content {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 1260px){
+    .FAQS-categ.green-faq-categ {
+        padding: 15px;
+    }
+    .green-anatomy-div {
+       width: 60% !important;
+    }
+    .prodview-anatomy.green-anatomy h4{
+        font-size: 20px !important;
+        line-height: 0.7;
+    }
+    .prodview-anatomy.green-anatomy br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .prodview-advantage.green-mattress-ques p {
+    color: #174567;
+    margin-top: 0px;
+    margin-bottom: 3em;
+}
+.prodview-sizechart-img.green-mattress-chart {
+    width: 95%;
+}
+
+}
+@media only screen and (max-width: 1000px){
+    .green-anatomy-div {
+        width: 100% !important;
+    }
+    .prodview-anatomy.green-anatomy {
+        display: flex;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 992px){
+    .faqs-desc {
+        text-align: left;
+        width: 70%;
+        margin: 0 2.5%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .prodview-advantage-con {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
+    grid-gap: 14px;
+}
+.prodview-advantage-con p {
+    width: 95%;
+}
+}
+
+@media only screen and (max-width: 812px){
+    .prodview-sizechart-img.green-mattress-chart {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .prodview-advantage-con {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+        margin: 0 auto;
+        grid-gap: 14px;
+    }
+    .prodview-advantage-con>div:nth-child(3) {
+            grid-column: 1 / last-line;
+            max-width: 50%;
+            margin: 0 auto;
+    }
+
+}
+@media only screen and (max-width: 736px){
+    .faqs-desc {
+        text-align: left;
+        width: 80%;
+    }
+    .prodview-advantage-con {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+        margin: 0 auto;
+        grid-gap: 14px;
+    }
+}
+
+@media only screen and (max-width: 637px) {
+    .faqs-desc {
+        text-align: left;
+        width: 90%;
+
+    }
+}
+@media only screen and (max-width: 568px) {
+    .faqs-desc {
+        text-align: left;
+        width: 95% !important;
+        margin: 0;
+    }
+    input[type="checkbox"] + label, input[type="radio"] + label {
+        font-size: 14px !important;
+    }
+    input+.terms-showMore+* {
+        font-size: 14px;
+    }
+    .faqs-content p {
+        font-size: 14px !important;
+    }
+    .faqs-content h4 {
+        font-size: 18px;
+    }
+    .faqs-content {
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .prodview-sizechart-img.green-mattress-chart {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .prodview-anatomy.green-anatomy {
+        display: grid;
+        align-items: center;
+    }
+    .prodview-anatomy div ul {
+    list-style-image: url(../img/prodpage/anatomy-list.png);
+    color: #173456;
+    font-size: 14px;
+}
+.prodview-anatomy.green-anatomy h4{
+    font-size: 18px !important;
+    line-height: 0.7;
+}
+.sub-prodview-podimg.green-matt-sub {
+    width: 100%;
+}
+.matt-ftr-div {
+    /* grid-template-columns: repeat(3, auto) !important; */
+    /* grid-gap: 10px; */
+    display: flex !important;
+    flex-wrap: wrap;
+}
+.green-matt-features {
+    height: auto;
+    padding: 20px;
+}
+
+.grn-matt-img {
+    width: 25%;
+}
+.grn-ftr-text {
+    text-align: center;
+    max-width: 90%;
+    margin-inline: auto;
+}
+.grn-ftr-text h2 {
+    font-size: 18px;
+}
+.grn-ftr-text p {
+    color: #888;
+    font-size: 14px;
+    margin-top: 0;
+}
+}
+@media only screen and (max-width: 500px) {
+    .faqs-desc>div p {
+        font-size: 12px !important;
+    }
+    input[type="checkbox"] + label, input[type="radio"] + label {
+    font-size: 11px !important;
+    margin: 0;
+    }
+    .faqs-content h4{
+        margin-bottom: 0;
+    }
+    .faqs-content p {
+        margin-top: 0;
+    }
+    .prodview-advantage-con {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 80%;
+        margin: 0 auto;
+        grid-gap: 14px;
+    }
+    .prodview-advantage-con>div:nth-child(3) {
+    grid-column: auto;
+    max-width: 100%;
+    margin: auto;
+    }
+    .prodview-advantage-con>div h4 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .prodview-advantage-con p {
+        width: 95%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .product-review-section.greenh2 h2 {
+        max-width: 70%;
+        margin: 23px auto 0 auto;
+    }
+    .product-review-section.greenh2 span {
+        color: #174567;
+        font-size: 16px;
+        /* display: block;
+        max-width: 70%;
+        margin: 0.3em auto 2em auto; */
+    }
+    .prodview-advantage.green-mattress-ques h3 {
+        font-size: 20px;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+    .sub-prodview-podimg div{
+        width: 80%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .prodview-advantage-con>div h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+}
     </style>
+    
+{{#if settings.data_tag_enabled}}
+{{> components/products/carousel products=products list="Featured Products"}}
+{{else}}
+{{> components/products/carousel products=products}}
+{{/if}}
+
     <div class="productView grn-matt-page" {{#if settings.data_tag_enabled}} data-event-type="product" data-entity-id="{{product.id}}" data-name="{{product.title}}" data-product-category="{{#each product.category}}{{#if @last}}{{this}}{{else}}{{this}}, {{/if}}{{/each}}" data-product-brand="{{product.brand.name}}" data-product-price="{{#if product.price.with_tax}}{{product.price.with_tax.value}}{{else}}{{product.price.without_tax.value}}{{/if}}" data-product-variant="single-product-option"{{/if}}>
     
         {{#each product.reviews.messages}}
@@ -329,43 +790,68 @@ label.terms-showMore i {
         {{/each}}
      
     
-    
-        <section class="productView-images green-matt-imgs" data-image-gallery>
-            <figure class="productView-image green-matt-prodimg {{#gt product.images.length 1}}has-thumbs{{/gt}}"
-                    data-image-gallery-main
-                    data-zoom-image="{{getImage product.main_image 'zoom_size' (cdn theme_settings.default_image_product)}}"
-                    >
-                <div class="productView-img-container green-matt-prodcon">
-                    <a href="{{getImage product.main_image 'zoom_size' (cdn theme_settings.default_image_product)}}">
-                        <img class="productView-image--default lazyload"
-                             data-sizes="auto"
-                             src="{{cdn 'img/loading.svg'}}"
-                             data-src="{{getImage product.main_image (cdn theme_settings.default_image_product)}}"
-                             data-zoom-target="{{getImage product.main_image 'zoom_size' (cdn theme_settings.default_image_product)}}"
-                             alt="{{product.main_image.alt}}" title="{{product.main_image.alt}}" data-main-image>
+        <section class="productView-images" data-image-gallery>
+        {{!--
+            Note that these image sizes are coupled to image sizes used in /assets/js/theme/common/product-details.js
+            for variant/rule image replacement
+        --}}
+        {{#if product.images.length '>' 1 }}
+        {{> components/carousel-content-announcement}}
+        {{/if}}
+        <figure class="productView-image"
+                data-image-gallery-main
+                {{#if product.main_image}}
+                data-zoom-image="{{getImageSrcset product.main_image (cdn theme_settings.default_image_product) 1x=theme_settings.zoom_size }}"
+                {{/if}}
+                >
+            <div class="productView-img-container">
+                {{!-- Remove the surrounding a-element if there is no main image. --}}
+                {{#if product.main_image}}
+                    <a href="{{getImageSrcset product.main_image (cdn theme_settings.default_image_product) 1x=theme_settings.zoom_size}}"
+                        target="_blank"{{#if schema}} itemprop="image"{{/if}}>
+                {{/if}}
+                {{> components/common/responsive-img
+                    image=product.main_image
+                    class="productView-image--default"
+                    fallback_size=theme_settings.product_size
+                    lazyload=theme_settings.lazyload_mode
+                    default_image=theme_settings.default_image_product
+                    otherAttributes="data-main-image"
+                }}
+                {{!-- Remove the surrounding a-element if there is no main image. --}}
+                {{#if product.main_image}}
                     </a>
-                </div>
-            </figure>
-            {{#gt product.images.length 1}}
-            <ul class="productView-thumbs green-matt-thumb" {{#gt product.images.length 5}} data-slick='{
+                {{/if}}
+            </div>
+        </figure>
+        <ul class="productView-thumbnails"{{#gt product.images.length 4}} data-slick='{
+                "infinite": false,
+                "mobileFirst": true,
+                "dots": false,
+                "accessibility": false,
+                "slidesToShow": 4,
+                "slidesToScroll": 4
+            }'{{/gt}}>
+            {{#each product.images}}
+                <li class="productView-thumbnail">
+                    <a
+                        class="productView-thumbnail-link"
+                        href="{{getImageSrcset this (cdn ../theme_settings.default_image_product) 1x=../theme_settings.zoom_size}}"
+                        data-image-gallery-item
+                        data-image-gallery-new-image-url="{{getImageSrcset this (cdn ../theme_settings.default_image_product) 1x=../theme_settings.product_size}}"
+                        data-image-gallery-new-image-srcset="{{getImageSrcset this use_default_sizes=true}}"
+                        data-image-gallery-zoom-image-url="{{getImageSrcset this (cdn ../theme_settings.default_image_product) 1x=../theme_settings.zoom_size}}"
+                    >
+                    {{> components/common/responsive-img
+                        image=this
+                        fallback_size=../theme_settings.productview_thumb_size
+                        lazyload=../theme_settings.lazyload_mode
+                    }}
+                    </a>
+                </li>
+            {{/each}}
 
-                }' {{/gt}} >
-                {{#each product.images}}
-                    <li class="productView-thumb green-matt-li">
-                        <a
-                            class="productView-thumbnail-link"
-                            href="{{getImage this (cdn ../theme_settings.default_image_product)}}"
-                            data-image-gallery-item
-                            data-image-gallery-new-image-url="{{getImage this (cdn ../theme_settings.default_image_product)}}"
-                            data-image-gallery-zoom-image-url="{{getImage this 'zoom_size' (cdn ../theme_settings.default_image_product)}}">
-                            <img class="lazyload" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="{{getImage this (cdn ../theme_settings.default_image_product)}}" alt="{{this.alt}}" title="{{this.alt}}">
-                        </a>
-                    </li>
-                    
-                {{/each}}
-                
-            </ul>
-        
+        </ul>
         <div class="prodview-shipping grn-mat-shp">
             <div class="grid-ship-details">
                 <div>                   
@@ -392,18 +878,17 @@ label.terms-showMore i {
                 </div>
             </div>
         </div>
-            
-            {{/gt}}
-    
-    
-    
-        </section>
+    </section>
           <section class="productView-details green-matt-details">
             <div class="productView-product green-matt-prod">
 
                 <div class="custom-productTitle green-matt-title">
-                    <h1 class="productView-title " {{#if schema}}itemprop="name"{{/if}}>{{product.title}}</h1>
-                    
+                    <h1 class="productView-title" {{#if schema}}itemprop="name"{{/if}}>{{product.title}}</h1>
+                    <!-- {{#if product.brand}}
+                        <h2 class="productView-brand"{{#if schema}} itemprop="brand" itemscope itemtype="http://schema.org/Brand"{{/if}}>
+                            <a href="{{product.brand.url}}"{{#if schema}} itemprop="url"{{/if}}><span{{#if schema}} itemprop="name"{{/if}}>{{product.brand.name}}</span></a>
+                        </h2>
+                    {{/if}} -->
                     <div class="productView-description green-matt-desc" {{#if settings.data_tag_enabled}} data-event-type="product" {{/if}}>
                         {{{product.description}}}
                         {{{snippet 'product_description'}}}
@@ -417,10 +902,10 @@ label.terms-showMore i {
                     <h4 class="productView-price">Total Price: &nbsp </h4>
                     {{#if product.call_for_price}}
                     <p class="productView-price">
-                        <span>{{product.call_for_price}}</span>
+                        <span style="font-size: 28px; font-weight: 800;">{{product.call_for_price}}</span>
                     </p>
                     {{/if}}
-                    <div class="productView-price">
+                    <div class="productView-price"  style="font-size: 28px; font-weight: 800;">
                         {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
                             {{> components/products/price price=product.price schema_org=schema}}
                         {{else}}
@@ -454,12 +939,9 @@ label.terms-showMore i {
                     {{#if product.event_date}}
                         {{> components/products/event-date}}
                     {{/if}}
-                    {{#if product.can_purchase}}
+               
                         {{> components/products/add-to-cart}}
-                        {{else}}
-                        {{> components/products/add-to-cart}}
-                    {{/if}}
-                    {{#if product.out_of_stock}}
+                      {{#if product.out_of_stock}}
                         {{#if product.out_of_stock_message}}
                             {{> components/common/alert/alert-error product.out_of_stock_message}}
                         {{else}}
@@ -517,7 +999,7 @@ label.terms-showMore i {
                     </div>
                 </div>
                 <div class="learnmore-div">
-                    <p class="learn-p-i"><i style="font-size: 12px;">*To learn more about shipping, check out our <a href="/shipping-transit-chart/" style="color:#00d2ff;"> Shipment Transit Chart.</a></i></p>
+                    <p class="learn-p-i"><p style="font-size: 12px;">*To learn more about shipping, check out our <a href="/shipping-transit-chart/" style="color:#00d2ff;"> Shipment Transit Chart.</a></p></p>
                 </div>
                 <div class="d-flex justify-content-between align-items-center flexgrn-matt">
                     <div class="font-weight-bold" style="color: #132448;">SPECIFICATIONS</div>
@@ -539,8 +1021,8 @@ label.terms-showMore i {
     <div class="green-matt-features">
         <div>
             <div class="grn-ftr-text">
-                <h2 class="font-weight-bold text-capitalize">Lorem Ipsum Dolor Sit Amet</h2>
-                <p>Experience the comfiest and most refreshing sleep with Icon Sleep's Green tea-infused memory foam mattress With ActivCharcoal&#8482; that neutralizes bad odor combined with BioFoam&reg; technology for contoured spinal support. It's definitely an investment for an improved sleep you deserve.  </p>    
+                <h2 class="font-weight-bold text-capitalize text-dark">Sleep Has Never Been This Rewarding</h2>
+                <p>Think of three words that best describe your green tea. Healthy. Refreshing. Natural. Thank you. Now infuse these properties with a CertiPUR-US® certified memory foam and you’re in for the most rewarding sleep you’ll ever have. </p>    
             </div>
     
             <div class="matt-ftr-div ">
@@ -582,13 +1064,13 @@ label.terms-showMore i {
     </div>
     
     
-    <div class="prodview-anatomy green-anatomy">
-        <div style="width:49%;" class="animation-element slide-left in-view" >
-            <img src="{{cdn '/assets/img/product-page/green-mattress-anatomy.png'}}" />
+    <div class="prodview-anatomy green-anatomy" style="margin-bottom: 5rem;">
+        <div style="width:49%;" class="green-anatomy-div animation-element slide-left in-view" >
+            <img class="position-relative w-100" src="{{cdn '/assets/img/product-page/green-mattress-anatomy.png'}}" />
         </div>
-        <div style="padding:0 5%;" class="animation-element slide-right in-view" >
-            <h4 style="color:#18253f; font-weight: 400; font-size: 28px; text-transform: inherit;" >Take A Closer Look.</h4>
-            <h4 style="color:#18253f; font-weight: bold; font-size: 28px; text-transform: inherit;" >An architecture that assures luxury.</h4>
+        <div style="padding:0 5%; display: grid; place-content: center;" class="animation-element slide-right in-view">
+            <h4 style="color:#18253f; font-weight: 700; font-size: 28px; text-transform: inherit;" >Take A Closer Look.</h4>
+            <h4 style="color:#18253f; font-weight: bold; font-size: 28px; text-transform: inherit; margin-top: 0;" >An architecture that assures luxury.</h4>
             <br>
             <ul class="check-blue">
                 <li class="animation-element invi fade-in duration-1500 delay-00 in-view">Impossibly soft outer material for comfort overload</li>
@@ -603,8 +1085,8 @@ label.terms-showMore i {
     
     </div>
     
-        <div class="prodview-sizechart green-matt">
-            <h3 class="text-center text-light">Size Comparison</h3>
+        <div class="prodview-sizechart green-matt mt-5">
+            <h3 class="text-center text-light font-weight-bold">Size Comparison</h3>
             <p class="text-center text-light">Worried your bed won't fit? Check out our size chart.</p>
             <div class="prodview-sizechart-img green-mattress-chart">
                 <div>
@@ -634,7 +1116,7 @@ label.terms-showMore i {
     
     <div class="prodview-advantage green-mattress-ques">
         <h3 class="text-center">Want to sleep a little longer?</h3>
-        <p class="text-center">If you want to indulge in long, deep slumbers, our Green Tea mattresses are pretty much willing to do the job.</p>
+        <p class="text-center w-75 mx-auto">If you want to indulge in long, deep slumbers, our Green Tea mattresses are pretty much willing to do the job.</p>
           <div class="prodview-advantage-con">
             <div>
                 <img src="{{cdn '/assets/img/prodpage/mattress-ques-img.png'}}" />
@@ -665,14 +1147,14 @@ label.terms-showMore i {
     
     <div class="product-review-section greenh2">
           <h2  class="text-center">Share Your Green Tea Mattress Story</h2>
-        <span class="text-center d-block">See why customers love LUXE or write a Review</span>
+        <span class="text-center d-block" style="color: #174567; font-size: 18px; margin-bottom: 5em;">See why customers love LUXE or write a Review</span>
         <div class="review-stamped mx-auto" style="width: 85%;">        
             <div id="stamped-reviews-widget" data-widget-type="carousel" data-product-id="{{ product.id }}" data-auto-play="true" data-auto-play-speed="10000" data-fill-empty="true" data-title="Authentic Reviews From Real Customers" data-random="? string:Authentic reviews from real customers. ?"></div>
                 </div>
         </div>    
     </div>
     
-    <div class="FAQS-categ green-faq-categ">
+    <div class="FAQS-categ green-faq-categ mt-5">
         <div class="faqs-content">
             
             <h4 style="">Frequently Asked Questions</h4>
@@ -703,3 +1185,4 @@ label.terms-showMore i {
             </div>
         </div>
     </div>
+
