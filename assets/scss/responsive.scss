@@ -147,6 +147,10 @@
         width: 75%;
         margin-inline: auto;
     }
+    .heroCarousel.rev-carousel .slick-dots {
+        left: 17.5%;
+        top: 36em;
+    }
 }
 
 @media only screen and (max-width: 1500px) {
@@ -258,10 +262,8 @@ a.like-us {
     top: 40%;
 }
 .heroCarousel.rev-carousel .slick-dots {
-    /* bottom: -128px; */
-    text-align: left;
     left: 17.5%;
-    top: 42em;
+    top: 37em;
 }
 // ICON SLEEP TRUTH PAGE
 .review-message-section div.content-rev > img {
@@ -348,10 +350,8 @@ a.like-us {
     border-right: 1px solid transparent;
 }
 .heroCarousel.rev-carousel .slick-dots {
-    /* bottom: -128px; */
-    text-align: left;
-    left: 6.5%;
-    top: 42em;
+    left: 7.5%;
+    top: 36em;
 }
 .accordion-faqs {
     width: 60%;
@@ -454,10 +454,10 @@ header.header.header-bannerimg.sticky-fix {
     max-height: 100%;
     height: 100% !important;
 }
-// .heroCarousel .slick-dots {
-//     bottom: 1.5rem;
-//     top: 55em;
-// }
+.heroCarousel.rev-carousel .slick-dots {
+    left: 7.5%;
+    top: 37em;
+}
 a.navPages-action {
     color: #132448 !important;
     font-weight: 700;
@@ -778,10 +778,8 @@ input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
     margin-top: 16px;
 }
 .heroCarousel.rev-carousel .slick-dots {
-    /* bottom: -128px; */
-    text-align: left;
-    left: 6.5%;
-    top: 44em;
+    left: 7.5%;
+    top: 38em;
 }
 .mattress-left-img img {
     position: relative;
@@ -937,12 +935,12 @@ a.navPages-action {
     text-transform: unset;
     text-transform: capitalize;
 }
-.heroCarousel.rev-carousel .slick-dots {
-    /* bottom: -128px; */
-    text-align: left;
-    left: 7.5%;
-    top: 44em;
-}
+// .heroCarousel.rev-carousel .slick-dots {
+//     /* bottom: -128px; */
+//     text-align: left;
+//     left: 7.5%;
+//     top: 44em;
+// }
 .mattress-left-img img {
     position: relative;
     object-fit: cover;
@@ -1027,5 +1025,8 @@ a.navPages-action {
     grid-template-columns: repeat(5, 100px) !important;
     grid-gap: 15px;
 }
-
+.heroCarousel.rev-carousel .slick-dots {
+    left: 7.5%;
+    top: 39em;
+}
 }

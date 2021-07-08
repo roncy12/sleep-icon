@@ -9,6 +9,12 @@
         text-align: left;
         color: #888;
     }
+    .heroCarousel-description {
+    max-width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Open Sans' !important;
+}
     @media only screen and (max-width: 1350px){
         .another-mattress-description.feature-m {
             margin-left: 1em;
@@ -131,21 +137,45 @@
             margin-top: 5px;
             font-size: 10px;
         }    
-    }
-    @media only screen and (max-width: 500px){
+        .button--primary {
+            border-color: #fff;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            background: #132448;
+            padding: 15px 60px 15px 60px;
+            font-weight: 700;
+            border-radius: 5px;
+        }
         .heroCarousel-content {
             width: 95% !important;
             text-align: center;
-            margin: 0 auto;
         }
         .heroCarousel-title {
-            font-size: 34px;
+            font-size: 48px;
+            font-weight: 600;
+            text-transform: inherit;
+            font-family: 'Open Sans' !important;
+            color: #132448;
+            text-transform: capitalize;
+            line-height: 1;
+        }
+    }
+    @media only screen and (max-width: 500px){
+        .heroCarousel-content {
+            width: 90% !important;
+            text-align: center;
+            margin: 0 auto;
+            padding: 8px;
+        }
+        .heroCarousel-title {
+            font-size: 42px;
             font-weight: 400;
             text-transform: capitalize !important;
             font-family: Almarai !important;
             color: #132448;
             text-transform: uppercase;
-            width: 75% !important;
+            width: 100% !important;
             display: block;
             text-align: center;
             margin: 0 auto;
@@ -304,7 +334,7 @@
         font-family: Almarai !important;
         color: #132448;
         text-transform: uppercase;
-        width: 90% !important;
+        width: 100% !important;
         display: block;
         text-align: center;
         margin: 0 auto;
@@ -312,11 +342,31 @@
     .most-affordable-desc h2 {
         width: 80%;
     }
+    .button--primary {
+        border-color: #fff;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: #132448;
+        padding: 15px 40px 15px 40px;
+        font-weight: 700;
+        border-radius: 5px;
+    }
 }
 @media only screen and (max-width: 312px) {
     .most-affordable-desc h2 {
         width: 90%;
     }
+    .heroCarousel-title {
+        font-size: 28px;
+    }
+    .heroCarousel-description {
+    max-width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Open Sans' !important;
+    color: #173456;
+}
 }
 </style>
 <div class="flex-mattrees-section us">
