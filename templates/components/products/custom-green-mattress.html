@@ -81,7 +81,8 @@
 .productView-title {
     font-size: 28px;
     color: #173456;
-    max-width: 75%;
+    max-width: 85%;
+    line-height: 1.2;
 }
 .productView-product.green-matt-prod {
     display: grid !important;
@@ -167,7 +168,7 @@ form.grn-matt-form div.u-hiddenVisually {
 .grn-matt-form .form-field.form-field--increments {
     display: inline-block;
     width: 30% !important;
-    margin: 0 1%;
+    margin: 0;
     vertical-align: top;
 }
 
@@ -484,7 +485,11 @@ div#add-to-cart-wrapper {
     background-position: left 2rem center;
 }
 div#add-to-cart-wrapper>div {
-    width: 50%;
+    width: 60%;
+    border-color: transparent;
+}
+.productView-description.green-matt-desc p {
+    margin-top: 0;
 }
 @media only screen and (max-width: 1920px) {
     .productView-img-container img {
@@ -500,6 +505,17 @@ div#add-to-cart-wrapper>div {
         position: relative;
         margin-top: 6em;
         margin-bottom: 3em;
+    }
+    section.productView-details.green-matt-details {
+        display: -ms-grid;
+        display: grid;
+        width: 50% !important;
+        height: auto;
+        position: absolute;
+        right: 0;
+        top: 4%;
+        left: 55%;
+        background: #fff;
     }
 }
 @media only screen and (max-width: 1825px) {
@@ -526,6 +542,20 @@ div#add-to-cart-wrapper>div {
     .productView-img-container {
         height: 29rem;
     }
+    .form-label--alternate {
+        margin-bottom: 0;
+    }
+    .productView-options .form-field {
+        font-size: 0;
+        margin-bottom: 1.4rem;
+    }
+    .grid-ship-details {
+        display: grid;
+        grid-template-columns: repeat(4, 165px);
+        place-items: center;
+        place-content: center;
+    }
+
 }
 @media only screen and (max-width: 1350px){
     .faqs-content {
@@ -534,6 +564,26 @@ div#add-to-cart-wrapper>div {
         margin: 0 auto;
         padding: 20px 0;
     }
+    .productView-thumbnail-link {
+        border: 1px solid #e5e5e5;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        height: 65px;
+        max-width: 100%;
+        padding: 0;
+        position: relative;
+        width: 85%;
+        box-sizing: unset;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .grid-ship-details {
+        display: grid;
+        grid-template-columns: repeat(4, 155px);
+        place-items: center;
+        place-content: center;
+    }
+
 }
 
 @media only screen and (max-width: 1260px){
@@ -549,6 +599,10 @@ div#add-to-cart-wrapper>div {
     }
     .prodview-anatomy.green-anatomy br {
         display: none;
+    }
+    .productView-img-container img {
+        position: relative;
+        height: 100%;
     }
 }
 
@@ -999,7 +1053,7 @@ div#add-to-cart-wrapper>div {
                     </div>
                 </div>
                 <div class="learnmore-div">
-                    <p class="learn-p-i"><p style="font-size: 12px;">*To learn more about shipping, check out our <a href="/shipping-transit-chart/" style="color:#00d2ff;"> Shipment Transit Chart.</a></p></p>
+                    <p style="font-size: 12px; margin-top: 4px;">*To learn more about shipping, check out our <a href="/shipping-transit-chart/" style="color:#00d2ff;"> Shipment Transit Chart.</a></p>
                 </div>
                 <div class="d-flex justify-content-between align-items-center flexgrn-matt">
                     <div class="font-weight-bold" style="color: #132448;">SPECIFICATIONS</div>
