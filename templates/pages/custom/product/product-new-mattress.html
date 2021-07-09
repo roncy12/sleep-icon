@@ -12,6 +12,7 @@ product:
 {{inject 'productId' product.id}}
 
 {{#partial "page"}}
+
 <style>
     html, body{
         font-family: 'Open Sans' !important;
@@ -34,25 +35,14 @@ product:
     .productView.grn-matt-page .new-review-form.stamped-visible {
         border-bottom: 1px solid #eee;
         background: #e2e8ed;
-        width: 30rem;
-    }
-    .productView.grn-matt-page .new-review-form.stamped-visible {
-        border-bottom: 1px solid #eee;
-        background: #e2e8ed;
         width: 39rem;
         margin-top: -16px !important;
-        padding: 20px;
+        padding: 25px;
+        z-index: 1;
+        position: relative;
     }
     
-    .productView.grn-matt-page #stamped-main-widget {
-        display: block;
-        overflow: hidden;
-        margin: 1em 5px;
-        font-style: normal;
-        position: absolute;
-        top: 29%;
-        right: 7%;
-    }
+
     
     .productView.grn-matt-page .stamped-summary-actions-newquestion:before, .stamped-summary-actions-newreview:before {
         display: none !important;
@@ -60,8 +50,8 @@ product:
     .productView.grn-matt-page span.stamped-summary-actions-newreview {
         border: 1px solid transparent;
         border: 1px solid transparent;
-        border-left: 1px solid;
         text-decoration: underline;
+        color: #888;
     }
     .productView.grn-matt-page .fa-star, .fa-star-half-o, .fa-star-o, .stamped-fa-star, .stamped-fa-star-half-o, .stamped-fa-star-o {
         color: gold;
@@ -69,12 +59,16 @@ product:
         font-size: 18px !important;
     }
     .productView.grn-matt-page span#stamped-badge-title {
-        font-size: 18px !important;
+        font-size: 16px !important;
         color: #888;
+        border-right: 1px solid #888;
+        padding-right: 8px;
+        
     }
     .productView.grn-matt-page span#stamped-badge-total {
-    font-size: 18px !important;
-    color: #888;
+        font-size: 16px !important;
+        color: #888;
+        
 }
  /* GREEN MATTRESS FOAM */
  .form {
@@ -508,6 +502,19 @@ div#add-to-cart-wrapper>div {
 .prodview-shipping-details.grn-matt-ship div {
     width: 50%;
 }
+.productView.grn-matt-page #stamped-main-widget {
+    display: block;
+    overflow: hidden;
+    margin: 1em 5px;
+    font-style: normal;
+    position: absolute;
+    top: 22%;
+    right: 9%;
+}
+
+#stamped-button-submit, input.stamped-button.stamped-button-primary.button.button-primary.btn.btn-primary {
+    position: relative;
+}
 
 @media only screen and (max-width: 1920px) {
     .productView-img-container img {
@@ -524,16 +531,28 @@ div#add-to-cart-wrapper>div {
         margin-top: 6em;
         margin-bottom: 3em;
     }
+    .productView-images {
+        width: 58%;
+    }
     section.productView-details.green-matt-details {
         display: -ms-grid;
         display: grid;
-        width: 50% !important;
+        width: 40% !important;
         height: auto;
         position: absolute;
         right: 0;
         top: 4%;
-        left: 55%;
+        left: 60%;
         background: #fff;
+    }
+    .productView.grn-matt-page #stamped-main-widget {
+        display: block;
+        overflow: hidden;
+        margin: 1em 5px;
+        font-style: normal;
+        position: absolute;
+        top: 21%;
+        right: 7%;
     }
 }
 @media only screen and (max-width: 1825px) {
@@ -547,17 +566,69 @@ div#add-to-cart-wrapper>div {
     font-size: 0;
     margin-bottom: 1rem;
 }
+.productView.grn-matt-page #stamped-main-widget {
+    display: block;
+    overflow: hidden;
+    margin: 1em 5px;
+    font-style: normal;
+    position: absolute;
+    top: 24%;
+    right: 7%;
 }
-@media only screen and (max-width: 1725px){
+}
+@media only screen and (max-width: 1750px){
     .productView-img-container {
         height: 33rem;
     }
+    .productView.grn-matt-page #stamped-main-widget {
+    display: block;
+    overflow: hidden;
+    margin: 1em 5px;
+    font-style: normal;
+    position: absolute;
+    top: 26%;
+    right: 7%;
+}
 }
 @media only screen and (max-width: 1609px){
     .productView.grn-matt-page {
         position: relative;
         margin-top: 6em;
         margin-bottom: 7em;
+    }
+    .form-increment .button {
+        margin: 0;
+        padding: 0 15px;
+        border: none;
+    }
+    .productView.grn-matt-page #stamped-main-widget {
+        top: 24%;
+        right: 7%;
+    }
+    .productView-title {
+        font-size: 24px;
+        color: #173456;
+        max-width: 85%;
+        line-height: 1.2;
+    }
+    .learnmore-div p {
+        font-size: 13px !important;
+    }
+}
+@media only screen and (max-width: 1500px){
+    .productView.grn-matt-page #stamped-main-widget {
+        display: block;
+        overflow: hidden;
+        margin: 1em 5px;
+        font-style: normal;
+        position: absolute;
+        top: 27%;
+        right: 7%;
+    }
+    .form-increment .button {
+        margin: 0;
+        padding: 0 15px;
+        border: none;
     }
 }
 @media only screen and (max-width: 1425px){
@@ -579,6 +650,21 @@ div#add-to-cart-wrapper>div {
     }
     section.productView-details.green-matt-details {
             height: 100%;
+    }
+    .productView.grn-matt-page #stamped-main-widget {
+        display: block;
+        overflow: hidden;
+        margin: 1em 5px;
+        font-style: normal;
+        position: absolute;
+        top: 29%;
+        right: 7%;
+    }
+        .productView-title {
+        font-size: 22px !important;
+        color: #173456;
+        max-width: 85%;
+        line-height: 1.2;
     }
 }
 @media only screen and (max-width: 1350px){
@@ -607,9 +693,31 @@ div#add-to-cart-wrapper>div {
         place-items: center;
         place-content: center;
     }
+    .productView.grn-matt-page #stamped-main-widget {
+        display: block;
+        overflow: hidden;
+        margin: 1em 5px;
+        font-style: normal;
+        position: absolute;
+        top: 30%;
+        right: 6.5%;
+    }
+    .productView.grn-matt-page .fa-star, .fa-star-half-o, .fa-star-o, .stamped-fa-star, .stamped-fa-star-half-o, .stamped-fa-star-o {
+        color: gold;
+        margin-left: 0;
+        font-size: 18px !important;
+    }
+    .productView-options .form-action .button {
+        background-position: left 1rem center;
+    }
 
 }
-
+@media only screen and (max-width: 1309px){
+    .productView.grn-matt-page #stamped-main-widget {
+        top: 30%;
+        right: 6.5%;
+    }
+}
 @media only screen and (max-width: 1260px){
     .FAQS-categ.green-faq-categ {
         padding: 15px;
@@ -649,20 +757,84 @@ div#add-to-cart-wrapper>div {
         font-size: 0;
         margin-bottom: 1rem;
     }
-}
 
+    .productView-title {
+        font-size: 24px;
+        color: #173456;
+        max-width: 85%;
+        line-height: 1.2;
+    }
+    .grn-matt-form .form-field.form-field--increments {
+        display: inline-block;
+        width: 32% !important;
+        margin: 0;
+        vertical-align: top;
+    }
+    .productView.grn-matt-page .fa-star, .fa-star-half-o, .fa-star-o, .stamped-fa-star, .stamped-fa-star-half-o, .stamped-fa-star-o {
+        color: gold;
+        margin-left: 0;
+        font-size: 18px !important;
+    }
+    section.productView-details.green-matt-details {
+        display: -ms-grid;
+        display: grid;
+        width: 45% !important;
+        height: auto;
+        position: absolute;
+        right: 0;
+        top: 4%;
+        left: 59%;
+        background: #fff;
+    }
+    .productView.grn-matt-page #stamped-main-widget {
+        top: 29.5%;
+        right: 3.5%;
+    }
+}
+@media only screen and (max-width: 1160px){
+    .productView.grn-matt-page #stamped-main-widget {
+        top: 29.5%;
+        right: 3.5%;
+    }
+    .productView-title {
+        font-size: 20px !important;
+        color: #173456;
+        max-width: 85%;
+        line-height: 1.2;
+    }
+}
 @media only screen and (max-width: 1080px){
     .prodview-advantage.green-mattress-ques p {
-    color: #174567;
-    margin-top: 0px;
-    margin-bottom: 3em;
+        color: #174567;
+        margin-top: 0px;
+        margin-bottom: 3em;
+    }
+    .prodview-sizechart-img.green-mattress-chart {
+        width: 95%;
+    }
+    .learnmore-div p {
+        font-size: 11px;
+    }
+    .productView-description.green-matt-desc p {
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+    .productView.grn-matt-page #stamped-main-widget {
+        top: 32.5% !important;
+        right: 4%;
+    }
+    .productView-options .form-action .button {
+        background-position: left 0.8rem center;
+        font-size: 12px;
+    }
 }
-.prodview-sizechart-img.green-mattress-chart {
-    width: 95%;
-}
-.learnmore-div p {
-    font-size: 11px;
-}
+@media only screen and (max-width: 1024px){
+    .productView-title {
+        font-size: 18px !important;
+        color: #173456;
+        max-width: 85%;
+        line-height: 1.2;
+    }
 }
 @media only screen and (max-width: 1000px){
     .green-anatomy-div {
@@ -671,6 +843,11 @@ div#add-to-cart-wrapper>div {
     .prodview-anatomy.green-anatomy {
         display: flex;
         align-items: center;
+    }
+    .form-increment .button {
+        margin: 0;
+        padding: 0 15px;
+        border: none;
     }
 }
 @media only screen and (max-width: 992px){
@@ -692,7 +869,49 @@ div#add-to-cart-wrapper>div {
     width: 95%;
 }
 }
+@media only screen and (max-width: 915px){
+    .productView.grn-matt-page #stamped-main-widget {
+        top: 35.5% !important;
+        right: 4%;
+    }
+}
 
+@media only screen and (max-width: 900px){
+    .productView-images {
+        width: 100%;
+    }
+    section.productView-details.green-matt-details {
+        width: 95% !important;
+        margin: 0 auto;
+    }
+    section.productView-details.green-matt-details {
+        width: 95% !important;
+        margin: 0 auto;
+        left: 0;
+        top: 92%;
+    }
+    .productView-options.grn-matt-opt {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: -3em;
+    }
+    .productView.grn-matt-page #stamped-main-widget {
+        top: 110.5% !important;
+        right: 9%;
+    }
+    .green-matt-features {
+        margin-top: 38em;
+    }
+        .grn-matt-opt-div {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .productView-product.green-matt-prod {
+        display: grid !important;
+        width: 90% !important;
+        margin: 0 auto;
+    }
+}
 @media only screen and (max-width: 812px){
     .prodview-sizechart-img.green-mattress-chart {
         flex-wrap: wrap;
@@ -720,6 +939,7 @@ div#add-to-cart-wrapper>div {
     }
     .productView-images {
         width: 100%;
+        margin-bottom: 0;
     }
     section.productView-details.green-matt-details {
         display: -ms-grid;
@@ -1038,7 +1258,6 @@ div#add-to-cart-wrapper>div {
 }
     </style>
     
-
 
 
     {{#each product.shipping_messages}}
