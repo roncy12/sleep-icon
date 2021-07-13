@@ -664,10 +664,9 @@ a.test-mattress-button {
 // }
 .navUser-item .navUser-action .fa, .navUser-item .navUser-action .fas {
     font-weight: 900;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-left: 0em;
 }
-
 .navUser-item--account .navUser-action {
     display: flex;
     align-items: center;
@@ -960,7 +959,7 @@ i.fas.fa-envelope-open-text.icon {
 }
 input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn {
     background: #00b8df;
-    width: 5em;
+    width: 100%;
     margin-top: 0;
 }
 
@@ -973,14 +972,13 @@ input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn {
 }
 
 .input-container {
-    display: -ms-flexbox;
     display: flex;
     margin-bottom: 26px;
     position: relative;
-    -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-align: center;
     align-items: center;
+    padding: 0;
+    width: 25%;
 }
 .button--primary {
     border-color: #fff;
@@ -3771,7 +3769,7 @@ a.is-truth {
 
 .truthPage-slide.review-istruth {
     background: #fff;
-    width: auto;
+    width: auto !important;
     margin: 0 16px;
     height: 31em;
     border-radius: 35px;
@@ -3887,3 +3885,4 @@ html, body{
     right: 0;
     width: 25rem;
 }
+

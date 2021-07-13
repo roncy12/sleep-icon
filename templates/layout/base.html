@@ -158,6 +158,17 @@
                   appearOnScroll.observe(slider);
                 });
 
+                $('#toggle_icon').toggle(function() {
+                $('#toggle_icon').text('-');
+                $('#toggle_text').slideToggle();
+
+                }, function() {
+
+                $('#toggle_icon').text('+');
+                $('#toggle_text').slideToggle();
+
+                });
+
             </script>
  
             
@@ -174,6 +185,16 @@
                   header.classList.remove("sticky");
                 }
               }
+
+              $('.variable-width').slick({
+              dots: true,
+              infinite: true,
+              speed: 300,
+              slidesToShow: 1,
+              centerMode: true,
+              variableWidth: true,
+              arrows: true
+            });
                 
           </script>
 

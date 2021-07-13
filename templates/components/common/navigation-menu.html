@@ -3,7 +3,7 @@
         {{> components/common/quick-search name='nav-menu-quick-search'}}
     </div>
     <ul class="navPages-list{{#if theme_settings.navigation_design '!==' 'simple'}} navPages-list-depth-max{{/if}}">
-        {{#each categories}}
+        <!-- {{#each categories}}
             <li class="navPages-item">
             {{#if ../theme_settings.navigation_design '===' 'simple'}}
                 {{> components/common/navigation-list}}
@@ -12,8 +12,8 @@
                 {{> components/common/navigation-list-alternate}}
             {{/if}}
             </li>
-        {{/each}}
-        {{#unless theme_settings.hide_content_navigation}}
+        {{/each}} -->
+        <!-- {{#unless theme_settings.hide_content_navigation}}
             {{#each pages}}
                  <li class="navPages-item navPages-item-page">
                      <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}"
@@ -24,7 +24,56 @@
                      </a>
                  </li>
              {{/each}}
-        {{/unless}}
+        {{/unless}} -->
+        <li class="navPages-item navPages-item-page">
+            <a class="navPages-action "
+               href="/green-tea-memory-foam-bed-mattres/"
+               aria-label="{{name}}">
+                Shop Mattress&nbsp;
+            </a>
+        </li>
+        <li class="navPages-item navPages-item-page">
+            <a class="navPages-action "
+               href="/sleep-trial/"
+               aria-label="{{name}}">
+                Sleep Trial&nbsp;
+            </a>
+        </li>
+        <li class="navPages-item navPages-item-page">
+            <a class="navPages-action "
+               href="/the-truth/"
+               aria-label="{{name}}">
+                The Truth&nbsp;
+            </a>
+        </li>
+        <li class="navPages-item navPages-item-page">
+            <a class="navPages-action "
+               href="/about-us/"
+               aria-label="{{name}}">
+                About Us&nbsp;
+            </a>
+        </li>
+        <li class="navPages-item navPages-item-page">
+            <a class="navPages-action "
+               href="/reviews/"
+               aria-label="{{name}}">
+                Reviews&nbsp;
+            </a>
+        </li>
+        <li class="navPages-item navPages-item-page">
+            <a class="navPages-action "
+               href="/support/"
+               aria-label="{{name}}">
+                Support&nbsp;
+            </a>
+        </li>
+        <li class="navPages-item navPages-item-page">
+            <a class="navPages-action "
+               href="/blog/"
+               aria-label="{{name}}">
+                Blog&nbsp;
+            </a>
+        </li>
     </ul>
     <ul class="navPages-list navPages-list--user">
         {{#if currency_selector.currencies.length '>' 1}}

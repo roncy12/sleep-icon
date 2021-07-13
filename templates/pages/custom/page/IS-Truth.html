@@ -1,5 +1,14 @@
 {{#partial "page"}}
 <style>
+
+ /* the slides */
+ .slick-slide {
+	margin: 0 26px;
+}
+/* the parent */
+.slick-list {
+	margin: 0 -26px;
+}
     @media only screen and (max-width: 768px){
 
         .truth-banner-text h4 {
@@ -333,7 +342,7 @@
         <h2>Real Reviews From Real People</h2>
         <p>Contrary to incentivized blog reviews, these people didn't get what they paid for.</p>
     </div>
-    <section class="truth-page-carousel" 
+    <section class="truth-page-carousel variable-width" 
      data-slick='{
             "arrows": {{arrows}},
             "mobileFirst": true,
@@ -342,7 +351,8 @@
             "autoplay": true,
             "centerMode": true,
             "dots": true,
-            "infinite": false
+            "infinite": true,
+            "centerPadding": 100px
           }' >
         <div class="truthPage-slide review-istruth" >
          
@@ -416,8 +426,16 @@
     <a href="/reviews/" class="is-truth fade-in from-bounce-in duration-1500" style="color: #fff; text-align: center;">VIEW ALL REVIEWS</a>   
 </div> 
 
+
  
 
 </main>
+<script type="text/javascript">
+    settings = {
+        centerMode: true,
+        centerPadding: $('.slick').find('.single-slide').outerWidth() / 2 ,
+        slidesToShow: 1
+    }
+</script>
 {{/partial}}
 {{> layout/base}}

@@ -414,6 +414,15 @@ a.like-us {
         font-weight: 600;
         font-size: 20px;
     }
+
+    .articlecontainer {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -504,9 +513,8 @@ a.navPages-action {
     align-items: center;
     margin-top: 3em;
 }
-input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
-    width: 18em;
-}
+
+
 
 .footer-info {
     margin: 0 auto;
@@ -663,10 +671,24 @@ article div.header-logo-image-container {
 .matt-ftr-div {
     grid-template-columns: repeat(5, 135px) !important;
 }
+.form-prefixPostfix.wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 80% !important;
+    margin: 0 auto;
+}
+.input-container {
+    width: 100%;
+}
 }
 
 @media only screen and (max-width: 1080px) {
-
+    .form-prefixPostfix.wrap {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100% !important;
+      
+    }
 .navPages ul {
     width: 100%;
     list-style: none;
@@ -743,9 +765,6 @@ article div.header-logo-image-container {
 
 article.sectionarticle .blog-thumbnail.blog-img {
     margin-top: -6em;
-}
-input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
-        width: 17em;
 }
 
 .another-mattress.night-div {

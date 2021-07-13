@@ -88,7 +88,12 @@
         display: flow-root;
         place-content: center;
     }
-
+    .form-prefixPostfix.wrap {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100% !important;
+        margin: 0;
+    }
 }
 @media only screen and (max-width: 900px) {
 
@@ -131,12 +136,7 @@
     }
 
     /*BLOG*/
-    input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
-        width: 14em;
-    }
-    input#nl_email {
-        width: 8em;
-    }
+
     article.sectionarticle .blog-thumbnail.blog-img {
     margin-top: -10em;
 }
@@ -403,15 +403,11 @@ article div.header-logo-image-container {
 article.sectionarticle .blog-thumbnail.blog-img {
     margin-top: -12em;
 }
-    input#nl_email {
-        width: 8em;
-    }
+
 article.sectionarticle .blog-thumbnail.blog-img {
     margin-top: -12em;
 }
-input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
-        width: 13em;
-}
+
 .heroCarousel-content {
     width: 70% !important;
     max-height: initial;
@@ -575,7 +571,7 @@ input#nav-menu-quick-search {
     width: 100%;
     border: 1px solid white;
     background: white;
-    height: 4rem;
+
 }
 input.button.button--primary.form-prefixPostfix-button--postfix.srch-button {
     margin-top: 10px;
@@ -647,7 +643,10 @@ span.shop-button {
 }
 
 @media only screen and (max-width: 768px) {
-
+    .image-banner {
+        margin-top: 9em;
+        background-position: center;
+    }
 strong.author {
     margin-left: 4%;
 }
@@ -787,9 +786,8 @@ a.navPages-action {
     article.sectionarticle .blog-thumbnail.blog-img {
         margin-top: -13em;
     }
-    input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
-        width: 10em;
-    }
+
+
     .stamped-review-avatar {
         position: absolute;
         bottom: 0;
@@ -860,9 +858,8 @@ a.navPages-action {
 article.sectionarticle .blog-thumbnail.blog-img {
     margin-top: 0em;
 }
-input.button.button--primary.form-prefixPostfix-button--postfix.blog-btn{
-    width: 8em;
-}
+
+
 article.sectionarticle .blog.blog-flex {
     display: block;
 }
@@ -1079,6 +1076,10 @@ button.accordion-faqs:hover, button.accordion-faqs:focus, .button.accordion-faqs
     .night-sleep-banner {
        height: 515px;
     }
+    .input-container{
+        width: 25%;
+    }
+   
 }
 @media only screen and (max-width: 568px){
     header.header.header-bannerimg {
@@ -1599,6 +1600,12 @@ article.footer-info-col.footer-info-col--small.mobile.like-us-btn {
     }
 }
 @media only screen and (max-width: 414px){
+    .newsletter-blog > h5 {
+        margin-top: 4em;
+    }
+    .blog-center {
+        font-size: 22px;
+    }
     a.like-us {
         width: 50%;
         margin: 0 auto;
@@ -1906,7 +1913,7 @@ a.navPages-action {
     width: 100%;
     max-width: 100%;
     position: relative;
-    margin-top: 0em;
+    margin-top: 9em;
 }
 
 /* FAQS */
@@ -2076,9 +2083,9 @@ i.fas.fa-envelope-open-text.icon {
     font-size: 2.2em;
     color: white;
     text-align: center;
-    top: 40%;
+    top: 43%;
     position: absolute;
-    left: 58%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 

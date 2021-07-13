@@ -115,14 +115,20 @@
                             <a href="{{product.brand.url}}"{{#if schema}} itemprop="url"{{/if}}><span{{#if schema}} itemprop="name"{{/if}}>{{product.brand.name}}</span></a>
                         </h2>
                     {{/if}} -->
+                    <div id="stamped-reviews-widget" class="mx-auto grn-matt-stamp" style="display: inline-block;" data-widget-type="site-badge" data-badge-type="minimal" data-title="Verified Reviews" data-title-size="15" data-size-stars="12" data-element-id="2" data-lang="en">&nbsp;</div>
+                    <div>
+                        {{> components/products/modals/writeReview}}
+                    </div>
+                    
                     <div class="productView-description green-matt-desc" {{#if settings.data_tag_enabled}} data-event-type="product" {{/if}}>
                         {{{product.description}}}
                         {{{snippet 'product_description'}}}
                     </div>
+ 
                     <!-- <div id="stamped-reviews-widget" style="display: inline-block;" data-widget-type="site-badge" data-badge-type="minimal" data-title="Verified Reviews" data-title-size="15" data-size-stars="12" data-element-id="2" data-lang="en">&nbsp;</div> -->
                 
                 </div>
-                <div id="stamped-reviews-widget" class="mx-auto grn-matt-stamp" style="display: inline-block;" data-widget-type="site-badge" data-badge-type="minimal" data-title="Verified Reviews" data-title-size="15" data-size-stars="12" data-element-id="2" data-lang="en">&nbsp;</div>
+                
                
                <div class="d-flex align-items-center grn-matt-price">
                     <h4 class="productView-price">Total Price: &nbsp </h4>
@@ -225,11 +231,40 @@
                 <div class="learnmore-div">
                     <p style="font-size: 14px; margin-top: 4px; text-align: left;">*To learn more about shipping, check out our <a href="/shipping-transit-chart/" style="color:#00d2ff;"> Shipment Transit Chart.</a></p>
                 </div>
-                <div class="d-flex justify-content-between align-items-center flexgrn-matt">
-                    <div class="font-weight-bold" style="color: #132448;">SPECIFICATIONS</div>
-                    <div><img src="{{cdn '/assets/img/prodpage/pllus-icon-img.png'}}" /></div>
+                <div class="faqs-desc specs-desc">
+                    <input id="_0" type="checkbox">
+                    <label class="terms-showMore specs-label" for="_0">
+                        <p style="color: #173456; margin-top: 0;"> SPECIFICATIONS </p><img class="fas fa-plus s-plus" id="add" src="{{cdn '/assets/img/prodpage/pllus-icon-img.png'}}">
+                        <img class="fas fa-times" id="close" src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/minus-sign-icon.png?t=1624521698'}}" />
+                    </label>
+                    <div style="padding: 0;">
+                        <div class="data-table" id="product-attribute-specs-table"> 
+                            <table style="width:100%">
+                            <div class="productView-info"> 
+                                <!-- {{#each product.custom_fields}} -->
+                         
+                                    <tr>
+                                    <div>
+                                        <td class="productView-info-name">{{name}}:</td>
+                                        <td class="productView-info-value">{{{value}}}</td>
+                                    </div>
+                                    </tr>
+                             
+                                <!-- {{/each}} -->
+                            </div>
+                        </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+                <!-- <table style="width:100%">
+                    <tr>
+                        <td>Collection</td>
+                        <td>Green Tea Memory Foam</td>                                 
+                    </tr>                                                                         
+                </table> -->
+
+                 
             {{#if theme_settings.show_product_description_below}}
                 <div class="productView-scrollToDescription" id="description">
                     <a href="#description{{#if is_ajax}}_{{product.id}}{{/if}}">{{lang 'products.product_details'}} <span class="icon"><svg><use xlink:href="#icon-arrow-down"></use></svg></span></a>
@@ -237,37 +272,35 @@
               {{/if}}
             </div>
         </section>
-    
-    
+
     </div>
-    
-    
-    <div class="green-matt-features">
-        <div>
-            <div class="grn-ftr-text">
-                <h2 class="font-weight-bold text-capitalize text-dark">Sleep Has Never Been This Rewarding</h2>
-                <p>Think of three words that best describe your green tea. Healthy. Refreshing. Natural. Thank you. Now infuse these properties with a CertiPUR-US® certified memory foam and you’re in for the most rewarding sleep you’ll ever have. </p>    
-            </div>
-    
-            <div class="matt-ftr-div ">
-                <div class="grn-matt-img">
-                    <img src="{{cdn '/assets/img/prodpage/active-charcoal.png'}}" />
+
+        <div class="green-matt-features">
+            <div>
+                <div class="grn-ftr-text">
+                    <h2 class="font-weight-bold text-capitalize text-dark">Sleep Has Never Been This Rewarding</h2>
+                    <p>Think of three words that best describe your green tea. Healthy. Refreshing. Natural. Thank you. Now infuse these properties with a CertiPUR-US® certified memory foam and you’re in for the most rewarding sleep you’ll ever have. </p>    
                 </div>
-                <div class="grn-matt-img">
-                    <img src="{{cdn '/assets/img/prodpage/Compression-tech_icon.png'}}" />
-                </div>
-                <div class="grn-matt-img">
-                    <img src="{{cdn '/assets/img/prodpage/Bio-Foam_icon.png'}}" />
-                </div>
-                 <div class="grn-matt-img">
-                     <img src="{{cdn '/assets/img/prodpage/Evergreen_icon.png'}}" />
-                </div>
-                 <div class="grn-matt-img">
-                     <img src="{{cdn '/assets/img/prodpage/SGS_icon.png'}}" />
+        
+                <div class="matt-ftr-div ">
+                    <div class="grn-matt-img">
+                        <img src="{{cdn '/assets/img/prodpage/active-charcoal.png'}}" />
+                    </div>
+                    <div class="grn-matt-img">
+                        <img src="{{cdn '/assets/img/prodpage/Compression-tech_icon.png'}}" />
+                    </div>
+                    <div class="grn-matt-img">
+                        <img src="{{cdn '/assets/img/prodpage/Bio-Foam_icon.png'}}" />
+                    </div>
+                     <div class="grn-matt-img">
+                         <img src="{{cdn '/assets/img/prodpage/Evergreen_icon.png'}}" />
+                    </div>
+                     <div class="grn-matt-img">
+                         <img src="{{cdn '/assets/img/prodpage/SGS_icon.png'}}" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <div class="sub-prodview-podimg green-matt-sub">
         <div class="animation-element bounce-in invi duration-1500 in-view">
@@ -409,4 +442,9 @@
             </div>
         </div>
     </div>
-
+    <script>
+        function myFunction() {
+        //   document.getElementById("demo").innerHTML = "Hello World";
+        console.log('Hello World');
+        }
+        </script>
